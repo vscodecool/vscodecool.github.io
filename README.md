@@ -516,19 +516,100 @@ VS Code中涉及调试的知识非常的多，我将这些知识分成了两类�
 
 #### 21 调试界面概览
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV18E41147NM) | [Youtube](https://youtu.be/2Q_FeLtgXcI)
+
+这一节课，我们将对VS Code的调试界面做一个大致的概览。
+
+VS Code的调试界面，我将它分成了四个部分，分别是：
+
+1. 位于顶部的Debug toolbar，在调试时，用它来控制程序的执行流程
+2. 位于行号左侧的Breakpoint，也就是断点。为了做调试，我们至少需要打上一个断点
+3. 位于底部的Debug console panel，它有两个功能，一是可以输出调试日志，二是可以利用当前函数的本地变量输出表达式的值
+4. 位于Side Bar中的Debug sidebar，它由多个部分组成，用于显示本地变量、计算表达式、显示函数调用栈、断点管理等功能
 
 #### 22 Debug sidebar的使用方式
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1HE411x7gi) | [Youtube](https://youtu.be/prO6u1AUHDo)
+
+这一节课，我们会学习Debug sidebar的使用方式。
+
+课程中会使用以下代码片段：
+
+```js
+class Person {
+    constructor(firstName, lastName, age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+
+    getName() {
+        const name = this.lastName + this.firstName;
+        return name;
+    }
+
+    say() {
+        const name = this.getName();
+        const text = name + ":" + this.age;
+        return text;
+    }
+}
+
+const person = new Person("三", "张", 20);
+const text = person.say();
+console.log(text);
+```
+Debug sidebar一共由五个部分组成，从上到下分别是：VARIABLES、WATCH、CALL stack、LOADED SCRIPTS、BREAKPOINTS。这里面我个人觉得：学会VARIABLES、WATCH和CALL stack的用法非常的重要，利用VARIABLES，我们可以分析当前函数的本地变量；利用WATCH，我们可以使用本地变量组成我们想要的表达式并输出结果；利用CALL stack，我们可以理清函数的调用关系。
 
 #### 23 Debug toolbar的使用方式
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1nA411b7QA) | [Youtube](https://youtu.be/0peiVKd37wI)
+
+这一节课，我们会学习Debug toolbar的使用方式。
+
+首先我想声明的是：学会使用Debug Toolbar**非常的重要**，它将直接关系到我们能否顺利完成调试任务，所以建议你一定要牢牢掌握这一节课的内容。
+
+当我们在调试时，我们就必须要借助Debug Toolbar上的六个工具，来控制程序的执行流程，这六个工具从左到右分别叫做：continue、step over、step into、step out、restart、stop。
+
+**continue**，它的作用是**立即跳到下个断点**，如果后面没有断点了，那么程序就会运行到最后一行代码，在Web后端开发中，为了调试一个请求处理函数，我们常常会利用continue来释放被阻塞的请求。
+
+**stop**，它的作用很简单，用于**立即中断调试**，当我们想要放弃调试时，就可以使用它。
+
+**restart**，它的作用也很简单，用于**立即重启调试**，当我们在调试过程中修改了源代码，为了让修改生效，我们就可以使用它来重启调试。
+
+接下来，是有点让人迷惑的**step over**和**step into**了，之所以让人迷惑，是因为他俩既有相似点也有不同点，关键在于**当前行是否存在函数调用**，如果存在，那他俩的作用一样：都是**单步执行**，如果不存在，**step over**会直接拿到函数的返回结果并运行至下一行，而**step into**则会进入当前行函数并运行至该函数的第一行。所以，如果当前行存在函数调用，选择**step over**还是**step into**，就要看我们对这个函数内部实现细节感不感兴趣了，感兴趣的话就用**step into**，不感兴趣的话就用**step over**。
+
+最后一个是**step out**，它和**step into**刚好相反，**step into**是跳入函数，而**step out**则是跳出函数。它的使用场景常常是：当我们身处某个函数内部，同时这个函数的代码行数又很多，我们可能利用单步调试，运行了前面几行代码过后，就达到了自己的调试目的，这时候为了避免再单步执行后面大段我们不感兴趣的代码，我就可以使用它来快速跳出当前函数，节省时间。
+
+在这一节课的视频中，你将学习每一个工具的具体作用以及使用场景。
 
 #### 24 介绍launch.json
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1Jf4y1S7Bw) | [Youtube](https://youtu.be/4Jqnf-E9VSY)
+
+这一节课，我们会学习launch.json的具体用法。
+
+课程中会使用以下代码片段：
+
+```js
+const http = require("http");
+
+const server = http.createServer((req, res) => {
+    res.end("hello world");
+});
+
+server.listen(3000, () => {
+    console.log("Server is listening on 3000");
+});
+```
+
+除了Node.js以外，其它场景的调试，我们都需要配置launch.json这个文件，所以学习和理解launch.json就显得格外重要。
+
+launch.json是用于调试的配置文件，这个配置文件里会指定一些非常重要的信息，比如说，当前调试的程序是什么语言编写的，是Java？是C#？还是C？等等。这个关键的信息必须要在launch.json中指定，为了指定这个信息，我们需要借助配置项`type`。
+
+除了`type`，还有一个配置项也很重要，叫做`request`，它有两个值可供选择，一个叫`launch`，一个叫`attach`。使用`launch`我们可以让VS Code去启动我们的程序，同时启动后的程序还支持调试。而`attach`的方式有点不一样，它并不会帮我们启动程序，而是通过为一个**已经在运行且还不支持调试**的程序**注入一个调试器**，让这个程序从不支持调试变成支持调试。
+
+
 
 #### 25 调试技巧1 搜索本地变量
 
