@@ -156,66 +156,274 @@ code [文件夹路径]     #用于打开指定路径下的文件夹
 
 ### 第二章 界面布局与功能介绍
 
-在第一章我们完成了VS Code的安装并且学习了如何使用VS Code去打开一个项目，我们将在这个的基础上，开始VS Code用户界面的学习。VS Code的用户界面其实是由五大部分组成，每一个部分都有特定的功能，这些功能从不同的角度来协助我们更好的利用VS Code来完成项目的开发工作，所以在正式使用VS Code开发项目之前，我们一定要先学好这五大部分。
+在第一章我们完成了VS Code的安装并且学习了如何使用VS Code去打开一个项目，我们将在这个的基础上，开始VS Code用户界面的学习。VS Code的用户界面其实是由五大部分组成，每一个部分都有特定的功能，这些功能从不同的角度协助我们更好的利用VS Code来完成项目的开发工作，所以在正式使用VS Code开发项目之前，我们一定要先学好这五大部分。
 
-这一章的内容会比较多，也有点杂，建议你多点耐心，一个一个的学好，我想，其中的一些看似很小的知识点或者技巧，如果你掌握了，一定会为你在实际的项目开发过程中节省很多时间，提升开发效率。
+这五大部分的内容会比较多，也有点杂，建议你多点耐心，一个一个的学好，我想，其中一些看似很小的知识点或者技巧，如果你掌握了，一定会帮助你在实际的项目开发过程中节省很多时间，提升开发效率。
 
 好的，下面我们就来一个一个的学习吧！
 
 **小节目录**
 
 - [08 用户界面概览](#08-用户界面概览)
-- [09 资源管理器]()
-- [10 搜索工具]()
-- [11 源代码管理]()
-- [12 在macOS上搭建Git环境]()
-- [13 在Windows上搭建Git环境]()
-- [14 在Linux上搭建Git环境]()
-- [15 在VS Code中使用Git - Part1]()
-- [16 在VS Code中使用Git - Part2]()
-- [17 介绍调试工具]()
-- [18 在macOS上搭建Node.js开发环境]()
-- [19 在Windows上搭建Node.js开发环境]()
-- [20 在Linux上搭建Node.js开发环境]()
-- [21 调试界面概览]()
-- [22 Debug sidebar的使用方式]()
-- [23 Debug toolbar的使用方式]()
-- [24 介绍launch.json]()
-- [25 调试技巧1 搜索本地变量]()
-- [26 调试技巧2 logpoints]()
-- [27 调试技巧3 conditional breakpoint]()
-- [28 调试技巧4 inline breakpoint]()
-- [29 调试技巧5 multi-target debugging]()
-- [30 管理扩展]()
-- [31 介绍Command Palette]()
+- [09 资源管理器](#09-资源管理器)
+- [10 搜索工具](#10-搜索工具)
+- [11 源代码管理](#11-源代码管理)
+- [12 在macOS上搭建Git环境](#12-在macos上搭建git环境)
+- [13 在Windows上搭建Git环境](#13-在windows上搭建git环境)
+- [14 在Linux上搭建Git环境](#14-在linux上搭建git环境)
+- [15 在VS Code中使用Git - Part1](#15-在vs-code中使用git---part1)
+- [16 在VS Code中使用Git - Part2](#15-在vs-code中使用git---part2)
+- [17 介绍调试工具](#17-介绍调试工具)
+- [18 在macOS上搭建Node.js开发环境](#18-在macos上搭建nodejs开发环境)
+- [19 在Windows上搭建Node.js开发环境](#19-在windows上搭建nodejs开发环境)
+- [20 在Linux上搭建Node.js开发环境](#20-在linux上搭建nodejs开发环境)
+- [21 调试界面概览](#21-调试界面概览)
+- [22 Debug sidebar的使用方式](#22-debug-sidebar的使用方式)
+- [23 Debug toolbar的使用方式](#23-debug-toolbar的使用方式)
+- [24 介绍launch.json](#24-介绍launchjson)
+- [25 调试技巧1 搜索本地变量](#25-调试技巧1-搜索本地变量)
+- [26 调试技巧2 logpoints](#26-调试技巧2-logpoints)
+- [27 调试技巧3 conditional breakpoint](#27-调试技巧3-conditional-breakpoint)
+- [28 调试技巧4 inline breakpoint](#28-调试技巧4-inline-breakpoint)
+- [29 调试技巧5 multi-target debugging](#29-调试技巧5-multi-target-debugging)
+- [30 管理扩展](#30-管理扩展)
+- [31 介绍Command Palette](#31-介绍command-palette)
 
 #### 08 用户界面概览
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV167411L7SM) | [Youtube](https://youtu.be/Ys4mbfvk3M0)
+
+这一节课，我们将对VS Code的用户界面做一个大致的概览。
+
+VS Code的用户界面一共由五大部分组成，分别是：
+
+1. 底部的Status Bar（状态栏），用于显示当前被打开文件的一些信息。
+2. 最左侧的Activity Bar（活动栏），它里面包含了VS Code五个重要功能的入口点。
+3. Activity Bar旁边的Side Bar（侧边栏），它里面包含了Activity Bar五个功能点的详细内容。
+4. 右侧，占据空间最多的Editor（编辑器），用于编写代码。
+5. 编辑器下方的Panels（面板），它包含了4个不同的面板，其中的Terminal面板我们会经常用到。
+
+
 
 #### 09 资源管理器
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1E7411A7DZ) | [Youtube](https://youtu.be/q1ExNjkORAY)
+
+从这一节课开始，我们将具体学习VS Code用户界面的每一块内容，首先我们将学习最左侧的Activity Bar。这一节课，我们会学习Activity Bar的第一个功能点：Explorer（资源管理器）。
+
+**Explorer**它的功能主要是用于显示我们项目所包含的所有文件以及文件夹。在Side Bar中，我们可以看到，整个功能区被分成了三个部分，从上到下分别是：OPEN EDITORS、项目本身、OUTLINE。位于中间的项目本身，我们可以看到自己的项目名，以及项目里包含的文件及文件夹，如果我们将鼠标放在在项目名的右侧区域，我们可以看到四个功能键，它们分别用于在当前项目里新建一个文件、新建一个文件夹、刷新当前目录、折叠某个目录。
+
+接着我们来看上方的OPEN EDITORS，在OPEN EDITORS里面，它以列表的形式列出了当前所有被打开的文件，这里面包含了一个非常好用的功能,我们可以将鼠标移动到OPEN EDITORS的右侧，这时会出现三个功能键，通过点击最右侧那个带有叉叉图标的按键，我们就可以**一键关闭所有当前被打开的文件**。在实际的项目开发过程中，随着时间推移，我们打开的文件经常是越来越多，这时候我们常常希望关闭所有被打开的文件，来让整个编辑器看起来更加清爽，而利用刚刚说的那个带有叉叉图标的按键，我们就可以很方便的完成这种操作。
+
+最后，我们来看一下最下方的OUTLINE，OUTLINE我用自己的话总结它的作用就是：**换个角度看代码**。对于一份源代码，OUTLINE中列出的视图常常会以另外一个角度来看待，比如当前源代码是HTML，OUTLINE中视图就会以DOM树的角度来看待，再比如当前源代码是面向对象编程语言，它就会从类、类的成员变量、类的成员函数等角度来看待。那，这种从不同角度来看待源代码会带来什么好处呢？好处有两点：第一，当代码过长时，通过OUTLINE中列出的视图信息，我们可以**很容易理解代码的组织结构**；第二，当代码过长时，通过点击OUTLINE视图中的选项，我们可以**很容易跳转到指定的代码块**。
+
 
 #### 10 搜索工具
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1K7411w7VE) | [Youtube](https://youtu.be/ahOPXnVEyNA)
+
+这一节课，我们会学习Activity Bar的第二个功能点，用于搜索和替换的：Search。
+
+点击Search，我们可以在Side Bar顶部看到两个输入框，第一个输入框是用于文本的搜索，而第二个输入框则用于文本的替换。相较于替换，我感觉在平时的工作中使用“搜索”会更多些。通过搜索，我们可以很方便的找到某个单词或者某个句子在整个项目中出现过的地方，通过查看搜索词在其它文件中是如何被使用，如果是跟踪一个bug，那么就能通过这种方式来快速追踪bug的来源，而如果我们是刚接手一个项目，就很有可能对其中的一些函数、类或者组件的用法不太熟悉，那么就能通过这种方式来找到这些函数、类或者组件出现过的地方，并参考它们是如何被写的。
+
+搜索和替换的使用方法很简单，直接在输入框里输入相应的单词就可以，但是VS Code还针对搜索和替换提供了一些高级选项，通过这些高级选项，我们可以进一步缩小查询结果的范围，当遇到比较大的项目时，开启这些选项还是很有用的，可以帮助我节省查看搜索结果所花费的时间，在这一节课的视频中，你可以看到这些高级选项具体是如何工作的。
 
 #### 11 源代码管理
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1A7411A7To) | [Youtube](https://youtu.be/XQVPHlAks-s)
+
+这一节课，我们会学习Activity Bar的第三个功能点，用于Git版本控制的：Source Control。
+
+通过Source Control，我们可以很方便在VS Code里完成对Git的相关操作。不过，为了使用Source Control，我们需要满足以下两个条件：
+
+1. 我们需要在本地电脑先搭建好Git环境
+2. 项目自身要使用Git
+
+虽然这门课程是用于学习VS Code，但是呢，Git在实际的工作中真的非常重要，所以在学习Source Control之前，我将先带领大家一步步完成Git环境的搭建。
+
+在搭建Git环境之前，我们先来看一下Git命令的分类，用过Git的都知道，一部分Git命令可以在本地电脑直接使用，比如说命令log、add、commit、branch等，还有一部分命令就必须和远程仓库做交互了，比如push、pull等。在实际的工作中，你会发现，我们几乎每天都要与远程Git仓库打交道，比如说，早上上班后，会首先拉取远程仓库最新的代码到本地，晚上下班前，将自己本地尚未提交的代码提交到远程等等。所以，学习Git，我们一定也要学好涉及远程仓库的一些知识，而提到远程仓库，就不得不提到存放远程远程仓库的**代码托管平台**了。市面上代码托管平台有很多很多，比如说可以是自建的Gitlab，也可以是利用几乎免费的Github等等，在后面的学习中，我将使用Github来做演示。
+
+为了安全、快捷的完成与远程仓库的通讯，我们常常采用ssh，而为了使用ssh，我们就必须要先在本地电脑做一些配置，所以整个Git环境搭建工作有很大一部分是涉及到ssh的相关配置。接下来，我们来看一下Git环境搭建的具体步骤：
+
+**第一步：安装Git**
+
+首先需要前往Git官网下载Git的安装包，地址是：[https://git-scm.com/downloads](https://git-scm.com/downloads)
+
+**第二步：完成Git的基础配置**
+
+安装完Git后，我们需要完成Git的两个基础配置：`user.name`和`user.email`，这样我们就能知道每次commit的作者是谁，他的联系邮箱又是什么。为了配置这两项，需要输入以下命令：
+
+```shell
+git config --global user.name "your name" 
+git config --global user.email your@example.com
+```
+
+*P.S. 将`your name`替换成你自己的Github用户名，将`your@example.com`替换成注册Github时填写的邮箱。*
+
+**第三步：生成ssh公钥私钥**
+
+从这一步开始，就进入ssh的相关配置了。我们首先需要在本地电脑通过一些命令生成ssh的公钥和私钥，这里我们可以参考Github所提供的一篇文档，它里面详细记录了各种操作系统生成ssh公钥和私钥的步骤，链接地址是：[https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)。
+
+**第四步：将公钥添加到Github**
+
+因为后面我们会使用Github来作为远程代码的托管平台，所以我们需要完成本地电脑与Github之间的ssh配置。完成这个配置很简单，我们首先将上一步生成的公钥内容复制，然后进入自己Github账户的设置页，然后点击侧边栏中的`SSH and GPG keys`并点击`New SSH key`，将复制的公钥在这里粘贴就可以。这样，以后我们本地电脑与Github进行ssh通讯时，本地电脑上的私钥就与存放在Github上公钥完成匹配，ssh通讯就能成功建立连接。对于这一步的操作，Github也提供了一份详细的文档，地址是：[https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
+
+**第五步：测试ssh连接**
+
+为了验证本地电脑与Github之间的ssh通讯是否正常，我们可以使用如下命令：
+
+```sh
+ssh -T git@github.com
+```
+
+如果显示的结果中出现了你的Github账户名，那就说明ssh通讯正常，也说明我们已经成功完成了Git环境的搭建工作。关于这一步详细的文档，可以参阅：[https://help.github.com/en/github/authenticating-to-github/testing-your-ssh-connection](https://help.github.com/en/github/authenticating-to-github/testing-your-ssh-connection)。
+
+在后面的三节课，我将安装上面这五步，分别完成在macOS、Windows以及Linux上的Git环境搭建。
 
 #### 12 在macOS上搭建Git环境
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1xj411f7ur) | [Youtube](https://youtu.be/ybcoXlTrmmM)
+
+这一节课，我们将学习如何在macOS上搭建Git环境，为我们后面学习Source Control做好准备。
+
+为了安装Git，我们将按照[第11课](#11-源代码管理)中提到第五个步骤来操作：
+
+**第一步：安装Git**
+
+首先需要前往Git官网下载Git的安装包，地址是：[https://git-scm.com/downloads](https://git-scm.com/downloads)
+
+**第二步：完成Git的基础配置**
+
+```shell
+git config --global user.name "your name" 
+git config --global user.email your@example.com
+```
+*P.S. 将`your name`替换成你自己的Github用户名，将`your@example.com`替换成注册Github时填写的邮箱。*
+
+**第三步：生成ssh公钥私钥**
+
+```shell
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add -K ~/.ssh/id_rsa
+```
+
+*P.S 需要将`your_email@example.com`替换成你自己的邮箱*
+
+**第四步：将公钥添加到Github**
+
+首先通过mac自带的`pbcopy`命令复制公钥内容，再将公钥粘贴到Github中。
+
+```shell
+pbcopy < ~/.ssh/id_rsa.pub
+```
+
+
+**第五步：测试ssh连接**
+
+```sh
+ssh -T git@github.com
+```
 
 #### 13 在Windows上搭建Git环境
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1x7411F7HV) | [Youtube](https://youtu.be/eft749KMZJM)
+
+这一节课，我们将学习如何在Windows上搭建Git环境，为我们后面学习Source Control做好准备。
+
+
+为了安装Git，我们将按照[第11课](#11-源代码管理)中提到第五个步骤来操作：
+
+**第一步：安装Git**
+
+首先需要前往Git官网下载Git的安装包，地址是：[https://git-scm.com/downloads](https://git-scm.com/downloads)
+这一步需要注意的是，在安装Git的时候，其实这个安装包也会默认帮我们安装一个叫`Git Bash`的工具。在Windows上做Git相关操作，相较于cmd或者Powershell，我推荐使用Git Bash。它有很多优点，比如，它可以在命令行中直接显示当前Git的分支名，所以在后面的几个步骤中，我将使用Git Bash来做命令的相关操作。
+
+**第二步：完成Git的基础配置**
+
+```shell
+git config --global user.name "your name" 
+git config --global user.email your@example.com
+```
+
+*P.S. 将`your name`替换成你自己的Github用户名，将`your@example.com`替换成注册Github时填写的邮箱。*
+
+**第三步：生成ssh公钥私钥**
+
+```shell
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+```
+
+*P.S 需要将`your_email@example.com`替换成你自己的邮箱*
+
+**第四步：将公钥添加到Github**
+
+首先通过Windows自带的`clip`命令复制公钥内容，再将公钥粘贴到Github中。
+
+```shell
+clip < ~/.ssh/id_rsa.pub
+```
+
+*如果你的windows系统不存在clip命令，你可以先用记事本打开公钥文件，再手动复制公钥内容*
+
+
+**第五步：测试ssh连接**
+
+```sh
+ssh -T git@github.com
+```
 
 #### 14 在Linux上搭建Git环境
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1V7411u7iA) | [Youtube](https://youtu.be/GPCzDPVCQ6M)
+
+这一节课，我们将学习如何在Linux上搭建Git环境，为我们后面学习Source Control做好准备，我将以Ubuntu桌面版做演示。
+
+为了安装Git，我们将按照[第11课](#11-源代码管理)中提到第五个步骤来操作：
+
+**第一步：安装Git**
+
+在Linux安装Git，我们可以通过下面这条命令：
+
+```shell
+sudo apt update && sudo apt install git -y
+```
+
+**第二步：完成Git的基础配置**
+
+```shell
+git config --global user.name "your name" 
+git config --global user.email your@example.com
+```
+
+*P.S. 将`your name`替换成你自己的Github用户名，将`your@example.com`替换成注册Github时填写的邮箱。*
+
+**第三步：生成ssh公钥私钥**
+
+```shell
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+```
+
+*P.S 需要将`your_email@example.com`替换成你自己的邮箱*
+
+**第四步：将公钥添加到Github**
+
+首先通过Linux的`cat`命令打印出公钥内容，再通过鼠标选中内容并手动复制，最后将公钥粘贴到Github中。
+
+```shell
+cat ~/.ssh/id_rsa.pub
+```
+
+
+**第五步：测试ssh连接**
+
+```sh
+ssh -T git@github.com
+```
 
 #### 15 在VS Code中使用Git - Part1
 
