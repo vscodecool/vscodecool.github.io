@@ -308,7 +308,7 @@ eval "$(ssh-agent -s)"
 ssh-add -K ~/.ssh/id_rsa
 ```
 
-*P.S 需要将`your_email@example.com`替换成你自己的邮箱*
+*P.S 将`your_email@example.com`替换成你自己的任意邮箱*
 
 **第四步：将公钥添加到Github**
 
@@ -336,8 +336,8 @@ ssh -T git@github.com
 
 **第一步：安装Git**
 
-首先需要前往Git官网下载Git的安装包，地址是：[https://git-scm.com/downloads](https://git-scm.com/downloads)
-这一步需要注意的是，在安装Git的时候，其实这个安装包也会默认帮我们安装一个叫`Git Bash`的工具。在Windows上做Git相关操作，相较于cmd或者Powershell，我推荐使用Git Bash。它有很多优点，比如，它可以在命令行中直接显示当前Git的分支名，所以在后面的几个步骤中，我将使用Git Bash来做命令的相关操作。
+首前往Git官网下载Git的安装包，地址是：[https://git-scm.com/downloads](https://git-scm.com/downloads)
+这一步需要注意的是，在安装Git的时候，其实这个安装包也会默认帮我们安装一个叫`Git Bash`的工具。在Windows上做Git相关操作，相较于cmd或者Powershell，我推荐使用Git Bash。它有很多优点，比如，它可以在命令行中直接显示当前Git的分支名，所以在后面的几个步骤中，我将使用Git Bash来完成相关操作。
 
 **第二步：完成Git的基础配置**
 
@@ -356,7 +356,7 @@ eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa
 ```
 
-*P.S 需要将`your_email@example.com`替换成你自己的邮箱*
+*P.S 将`your_email@example.com`替换成你自己的任意邮箱*
 
 **第四步：将公钥添加到Github**
 
@@ -408,7 +408,7 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 ```
 
-*P.S 需要将`your_email@example.com`替换成你自己的邮箱*
+*P.S 将`your_email@example.com`替换成你自己的任意邮箱*
 
 **第四步：将公钥添加到Github**
 
@@ -427,11 +427,40 @@ ssh -T git@github.com
 
 #### 15 在VS Code中使用Git - Part1
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1f7411N7Dj) | [Youtube](https://youtu.be/bK7dr7eG6KM)
+
+这一节课，我们将学习使用Source Control来完成一些Git常用操作。
+
+在前面的三节课里，我们完成了Git环境的搭建工作，所以这一节课开始，我们就来正式学习VS Code的Source Control。为了更好的学习Source Control，对于接下来的每一个演示项目，我都会准备两份。这两份其实它们的内容完全一致，不同的只是项目名而已。其中的一份，我会使用git命令加vim的方式进行操作，而另一份，我会使用VS Code来操作。之所以采用这种方式，第一，可以帮助你复习Git的常用命令。说真的，使用命令来操作Git是非常重要的，因为有些时候我们只能通过命令来完成Git操作，比如说在远程的Linux服务器上进行Git操作时，我们就只能通过Git命令。所以我个人的建议是：我们可以使用Git的GUI工具（*比如 SourceTree、Github Desktop、Gitkraken以及我们即将学习的Source Control*），但是一定要先学会如何使用命令来完成一些Git常用操作！第二，采用这种方式可以带来另外一个好处，那就是我们可以更好的理解在使用Source Control的过程中，它的底层到底做了什么操作，理解了这些底层操作，有时候反而可以帮助我们更加灵活的利用Source Control。第三，采用这种方式后，我们可以很好的进行比较：哪些操作使用VS Code真的很有优势，而哪些操作其实使用命令也很方便。
+
+Git的操作有很多，在这一节课里，我们会学习直接利用本地环境就能完成操作的Git命令，它们分别是：
+
+1. git init：用于初始化一个Git仓库
+2. git status：用于查看当前Git状态
+3. git add：它的使用场景有三个：1、将一个尚未被Git跟踪的文件纳入Git跟踪；2、将一个已经被Git跟踪的文件且这个文件处于修改状态，通过add，可以将它纳入暂存区；3、将merge或者rebase后产生的冲突文件标记为冲突已解决。
+4. git commit：将暂存区内容纳入Git提交记录
+5. git restore：取消对某个文件的修改
+6. git diff：查看文件修改详情
+7. git checkout：切换分支
+8. git branch：新建分支
+9. git merge：合并分支
+10. git stash：临时保存当前分支的工作状态，方便切换到其它分支。
+
+在这一节课的视频中，你可以看到上面提到的所有操作。
 
 #### 16 在VS Code中使用Git - Part2
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1A7411T7VC) | [Youtube](https://youtu.be/okSG4I99XuY)
+
+这一节课，我们将学习使用Source Control来完成与远程仓库相关的Git操作。
+
+与远程仓库相关的Git操作中，常用的有三个，它们分别是：
+
+1. git clone：用于克隆一个远程仓库
+2. git pull：用于拉取远程仓库的更新并将更新合并到本地分支，它等于git fetch 加 git merge
+3. git push：将本地的修改提交到远程分支
+
+在这一节课的视频中，你可以看到如何利用Git命令以及Source Control来完成上面三个操作。
 
 #### 17 介绍调试工具
 
