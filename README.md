@@ -172,7 +172,7 @@ code [文件夹路径]     #用于打开指定路径下的文件夹
 - [13 在Windows上搭建Git环境](#13-在windows上搭建git环境)
 - [14 在Linux上搭建Git环境](#14-在linux上搭建git环境)
 - [15 在VS Code中使用Git - Part1](#15-在vs-code中使用git---part1)
-- [16 在VS Code中使用Git - Part2](#15-在vs-code中使用git---part2)
+- [16 在VS Code中使用Git - Part2](#16-在vs-code中使用git---part2)
 - [17 介绍调试工具](#17-介绍调试工具)
 - [18 在macOS上搭建Node.js开发环境](#18-在macos上搭建nodejs开发环境)
 - [19 在Windows上搭建Node.js开发环境](#19-在windows上搭建nodejs开发环境)
@@ -680,7 +680,13 @@ Tip3: 课程中用于模拟第三方库的链接是：
 
 multi-target debugging的使用方式有两种，一种是通过依次启动单个调试配置项，另一种我认为更加方便，我们可以在launch.json中添加一个`compounds`配置项，通过它我们就能一键快速启动多个调试项。在这一节课的视频中，你将学到它们的具体用法。
 
-Tip: 课程中介绍了一个前后端分离项目，我将它上传到了Github，地址是：
+Tip1: 课程中要到的create-react-app命令可以通过下面的方式来安装：
+
+```shell
+npm i -g create-react-app
+```
+
+Tip2: 课程中介绍了一个前后端分离项目，我将它上传到了Github，地址是：
 
 [https://github.com/tsq-vscode/multi-target-debugging](https://github.com/tsq-vscode/multi-target-debugging)
 
