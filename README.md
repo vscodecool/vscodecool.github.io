@@ -79,7 +79,7 @@ VS Code近些年来越来越受开发者欢迎，是因为它的身上存在这�
 
 第四是**涵盖应用程序的整个生命周期**，一款代码编辑器一般只涵盖应用程序的开发阶段，而对于一些程序，比如说Web应用，常常还会有部署阶段。在VS Code中我们可以利用一些扩展，比如说微软公司提供的azure相关扩展，或者亚马逊公司提供的aws相关扩展，利用它们，我们就可以很方便的通过VS Code完成应用的一键部署，所以从开发到部署全程用VS Code这一个工具就够了！
 
-接下来，我们来看两个可能会遇到的并且有点令人迷惑的英文词汇：`Visual Studio Code`和`Visual Studio`。其实VS Code的全称叫做 `Visual Studio Code`，作为微软于2015年推出的一款代码编辑器，他还有一位老大哥，叫做[Visual Studio](https://visualstudio.microsoft.com/)。所以，`Visual Studio Code`和`Visual Studio`是两款不同的代码编辑器。Visual Studio是微软很早很早以前(*查了下[wikipedia](https://en.wikipedia.org/wiki/Microsoft_Visual_Studio)，第一个版本发布于1997年*)就推出的一款功能强大的IDE，但他主要用于微软自家的一些技术开发，比如说.NET开发和最近比较火的.NET Core开发。VS Code作为一款新产品，在创建之初，就从他大哥身上借鉴了很多好的地方，比如说后面课程会学习的`workspace`概念，如果你用过Visual Studio，你会发现这和Visual Studio上的`solution`很类似，同时VS Code也摒弃了他大哥身上一些不太好的地方，最大改善就是让整个软件变得更加轻量。VS Code安装过后大概占用不到300M的硬盘空间，而Visual Studio呢？哈哈，我这么说吧，没有个两三个G你是搞不定他的！我记得在读大学的时候，那时候还在用Visual Studio 2008，为了卸载Visual Studio，我每次都是转而选择重装系统！
+接下来，我们来看两个可能会遇到的并且有点令人迷惑的英文词汇：`Visual Studio Code`和`Visual Studio`。其实VS Code的全称叫做 `Visual Studio Code`，作为微软于2015年推出的一款代码编辑器，他还有一位老大哥，叫做[Visual Studio](https://visualstudio.microsoft.com/)。所以，`Visual Studio Code`和`Visual Studio`是两款不同的代码编辑器。Visual Studio是微软很早很早以前(*查了下[wikipedia](https://en.wikipedia.org/wiki/Microsoft_Visual_Studio)，第一个版本发布于1997年*)就推出的一款功能强大的IDE，但他主要用于微软自家的一些技术开发，比如说.NET开发和最近比较火的.NET Core开发。VS Code作为一款新产品，在创建之初，就从他大哥身上借鉴了很多好的地方，比如说后面课程会学习的`workspace`概念，如果你用过Visual Studio，你会发现这和Visual Studio上的`solution`很类似，同时VS Code也摒弃了他大哥身上一些不太好的地方，最大改善就是让整个软件变得更加轻量。VS Code安装过后大概占用不到300M的硬盘空间，而Visual Studio呢？哈哈，没有个两三个G你是搞不定他的！我记得在读大学的时候，那时候还在用Visual Studio 2008，为了卸载Visual Studio，我每次都是转而选择重装系统！
 
 除了有老大哥Visual Studio，VS Code他还有一位双胞胎兄弟，叫做`Insiders Edition`，他的下载地址是：[https://code.visualstudio.com/insiders/](https://code.visualstudio.com/insiders/)。他俩无论是相貌还是才能，几乎都一模一样，但是，微软会将一些新的bug修复或者一些新的功能更新，首先发布到`Insiders Edition`，等相应的功能稳定过后，才会将这部分更新发布到VS Code当中。如果你喜欢尝鲜的话，对于平时个人编程学习或者是开发自己的一些小项目，不妨试着用一用`Insiders Edition`。我自己就一直都在用`Insiders Edition`，给我的整体感受是：他俩在使用的是时候，基本上没什么区别。不过最近自己突然发现，`Insiders Edition`推出了[设置同步](https://code.visualstudio.com/docs/editor/settings-sync)功能（*界面左下角，包含人物图标的那个按钮就是*），我们可以使用自己的微软账户或者Github账户在`Insiders Edition`上进行登录，登录过后，我们安装的一些插件，设置过的一些偏好等信息都能够被同步到云端，如果我们以后换了台电脑，只要在新电脑上安装`Insiders Edition`并登录账户，云端保存的信息就会同步到本地，之前的设置就都恢复了。而这个设置同步功能，目前在VS Code中还没有，不过我估计很快就会有的。最后，为了从外貌上区分这对双胞胎，最简单的方法就是看他们的logo图标，`Insiders Edition`的是<span style="padding: 2px 8px;color: #fff;background-color: #20baa0;">绿色的</span>，而VS Code是<span style="padding: 2px 8px;color: #fff;background-color: #0066B8;">蓝色的</span>。
 
@@ -193,7 +193,7 @@ code [文件夹路径]     #用于打开指定路径下的文件夹
 
 视频链接：| [B站](https://www.bilibili.com/video/BV167411L7SM) | [Youtube](https://youtu.be/Ys4mbfvk3M0)
 
-这一节课，我们将对VS Code的用户界面做一个大致的概览。
+这一节课，我们会对VS Code的用户界面做一个大致的概览。
 
 VS Code的用户界面一共由五大部分组成，分别是：
 
@@ -278,7 +278,7 @@ ssh -T git@github.com
 
 如果显示的结果中出现了你的Github账户名，那就说明ssh通讯正常，也说明我们已经成功完成了Git环境的搭建工作。关于这一步详细的文档，可以参阅：[https://help.github.com/en/github/authenticating-to-github/testing-your-ssh-connection](https://help.github.com/en/github/authenticating-to-github/testing-your-ssh-connection)。
 
-在后面的三节课，我将安装上面这五步，分别完成在macOS、Windows以及Linux上的Git环境搭建。
+在后面的三节课，我将上面按照这五步，分别完成在macOS、Windows以及Linux上的Git环境搭建。
 
 #### 12 在macOS上搭建Git环境
 
@@ -336,7 +336,7 @@ ssh -T git@github.com
 
 **第一步：安装Git**
 
-首前往Git官网下载Git的安装包，地址是：[https://git-scm.com/downloads](https://git-scm.com/downloads)
+首先前往Git官网下载Git的安装包，地址是：[https://git-scm.com/downloads](https://git-scm.com/downloads)
 这一步需要注意的是，在安装Git的时候，其实这个安装包也会默认帮我们安装一个叫`Git Bash`的工具。在Windows上做Git相关操作，相较于cmd或者Powershell，我推荐使用Git Bash。它有很多优点，比如，它可以在命令行中直接显示当前Git的分支名，所以在后面的几个步骤中，我将使用Git Bash来完成相关操作。
 
 **第二步：完成Git的基础配置**
@@ -433,7 +433,7 @@ ssh -T git@github.com
 
 在前面的三节课里，我们完成了Git环境的搭建工作，所以这一节课开始，我们就来正式学习VS Code的Source Control。为了更好的学习Source Control，对于接下来的每一个演示项目，我都会准备两份。这两份其实它们的内容完全一致，不同的只是项目名而已。其中的一份，我会使用git命令加vim的方式进行操作，而另一份，我会使用VS Code来操作。之所以采用这种方式，第一，可以帮助你复习Git的常用命令。说真的，使用命令来操作Git是非常重要的，因为有些时候我们只能通过命令来完成Git操作，比如说在远程的Linux服务器上进行Git操作时，我们就只能通过Git命令。所以我个人的建议是：我们可以使用Git的GUI工具（*比如 SourceTree、Github Desktop、Gitkraken以及我们即将学习的Source Control*），但是一定要先学会如何使用命令来完成一些Git常用操作！第二，采用这种方式可以带来另外一个好处，那就是我们可以更好的理解在使用Source Control的过程中，它的底层到底做了什么操作，理解了这些底层操作，有时候反而可以帮助我们更加灵活的利用Source Control。第三，采用这种方式后，我们可以很好的进行比较：哪些操作使用Source Control真的很有优势，而哪些操作其实使用命令也很方便。
 
-Git的操作有很多，在这一节课里，我们会学习直接利用本地环境就能完成操作的Git命令，它们分别是：
+Git的操作有很多，在这一节课里，我们会学习利用本地环境就能完成操作的Git命令，它们分别是：
 
 1. git init：用于初始化一个Git仓库
 2. git status：用于查看当前Git状态
@@ -488,7 +488,7 @@ VS Code中涉及调试的知识非常的多，我将这些知识分成了两类�
 
 在macOS上搭建Node.js开发环境很简单，一共两步：
 
-1. 下载Node.js安装包并安装：下载地址是：https://nodejs.org
+1. 下载Node.js安装包并安装：下载地址是：[https://nodejs.org](https://nodejs.org)
 2. 校验安装是否成功：在Terminal中输入`node -v`
 
 #### 19 在Windows上搭建Node.js开发环境
@@ -499,7 +499,7 @@ VS Code中涉及调试的知识非常的多，我将这些知识分成了两类�
 
 在Windows上搭建Node.js开发环境也很简单，一共两步：
 
-1. 下载Node.js安装包并安装：下载地址是：https://nodejs.org
+1. 下载Node.js安装包并安装：下载地址是：[https://nodejs.org](https://nodejs.org)
 2. 校验安装是否成功：在cmd中输入`node -v`
 
 #### 20 在Linux上搭建Node.js开发环境
@@ -510,7 +510,7 @@ VS Code中涉及调试的知识非常的多，我将这些知识分成了两类�
 
 在Linux上搭建Node.js开发环境的方法有很多，我推荐如下方法：
 
-1. 安装nvm：文档地址是：http://nvm.sh
+1. 安装nvm：文档地址是：[http://nvm.sh](http://nvm.sh)
 2. 安装Node.js：直接在Terminal中输入`nvm install 12.16.1`来安装指定版本的Node.js，这里我选择的版本是：12.16.1
 3. 校验安装是否成功：在Terminal中输入`node -v`
 
@@ -531,7 +531,7 @@ VS Code的调试界面，我将它分成了四个部分，分别是：
 
 视频链接：| [B站](https://www.bilibili.com/video/BV1HE411x7gi) | [Youtube](https://youtu.be/prO6u1AUHDo)
 
-这一节课，我们会学习Debug sidebar的使用方式。
+这一节课，我们会学习Debug sidebar的使用方式，它由五个部分组成，在调试过程中，其中的每个部分都会从不同的角度来帮助我们完成调试工作。
 
 课程中会使用以下代码片段：
 
@@ -565,9 +565,9 @@ Debug sidebar一共由五个部分组成，从上到下分别是：VARIABLES、W
 
 视频链接：| [B站](https://www.bilibili.com/video/BV1nA411b7QA) | [Youtube](https://youtu.be/0peiVKd37wI)
 
-这一节课，我们会学习Debug toolbar的使用方式。
+这一节课，我们会学习Debug toolbar的使用方式，它里面包含里用于控制程序执行流程的六个小工具。
 
-首先我想声明的是：学会使用Debug Toolbar**非常的重要**，它将直接关系到我们能否顺利完成调试任务，所以建议你一定要牢牢掌握这一节课的内容。
+首先我想强调的是：学会使用Debug Toolbar**非常的重要**，它将直接关系到我们能否顺利完成调试任务，所以建议你一定要牢牢掌握这一节课的内容。
 
 当我们在调试时，我们就必须要借助Debug Toolbar上的六个工具，来控制程序的执行流程，这六个工具从左到右分别叫做：continue、step over、step into、step out、restart、stop。
 
@@ -581,13 +581,11 @@ Debug sidebar一共由五个部分组成，从上到下分别是：VARIABLES、W
 
 最后一个是**step out**，它和**step into**刚好相反，**step into**是跳入函数，而**step out**则是跳出函数。它的使用场景常常是：当我们身处某个函数内部，同时这个函数的代码行数又很多，我们可能利用单步调试，运行了前面几行代码过后，就达到了自己的调试目的，这时候为了避免再单步执行后面大段我们不感兴趣的代码，我就可以使用它来快速跳出当前函数，节省时间。
 
-在这一节课的视频中，你将学习每一个工具的具体作用以及使用场景。
-
 #### 24 介绍launch.json
 
 视频链接：| [B站](https://www.bilibili.com/video/BV1Jf4y1S7Bw) | [Youtube](https://youtu.be/4Jqnf-E9VSY)
 
-这一节课，我们会学习launch.json的具体用法。
+这一节课，我们会学习VS Code调试时，非常重要的launch.json。
 
 课程中会使用以下代码片段：
 
@@ -610,34 +608,89 @@ launch.json是用于调试的配置文件，这个配置文件里会指定一些
 除了`type`，还有一个配置项也很重要，叫做`request`，它有两个值可供选择，一个叫`launch`，一个叫`attach`。使用`launch`我们可以让VS Code去启动我们的程序，同时启动后的程序还支持调试。而`attach`的方式有点不一样，它并不会帮我们启动程序，而是通过为一个**已经在运行且还不支持调试**的程序**注入一个调试器**，让这个程序从不支持调试变成支持调试。
 
 
-
 #### 25 调试技巧1 搜索本地变量
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1Wi4y1t7VQ) | [Youtube](https://youtu.be/Fv_0UDflXbk)
+
+这一节课，我们会学习**搜索本地变量**这个调试小技巧，利用它我们可以从大量的信息中快速寻找到自己想要的结果。
+
+在调试过程中，左侧Debug sidebar区域中对VARIABLES里会显示当前函数的所有本地变量，有些情况下，这些本地变量的数量会非常对多，这种情况下，为了从中快速找到自己想要的值，我们就可以将光标定位到VARIABLES区域，然后直接输入搜索关键词，这样VS Code会自动定位到符合搜索词的变量并高亮其内容。在这一节课的视频中，我们将学习它的具体使用用法。
 
 #### 26 调试技巧2 logpoints
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1wz411z7Z7) | [Youtube](https://youtu.be/gBpl4-1VsYU)
+
+这一节课，我们会学习一种特殊的断点：**logpoints**，使用它我们可以以非阻塞、打日志的方式来调试程序
+
+对于一个处于生产环境的Web项目，如果我们想要对其进行调试，为了**降低普通断点造成请求被阻塞的风险**，我们就可以使用logpoints断点，它以非阻塞、打日志的方式来调试程序。在这一节课的视频中，我们将学习它的具体使用用法。
 
 #### 27 调试技巧3 conditional breakpoint
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV11k4y1r7zY) | [Youtube](https://youtu.be/nyv7_cVTn0M)
+
+这一节课，我们会学习一种特殊的断点：**conditional breakpoint**，使用它我们可以为一个断点添加条件判断语句，条件判断语句返回真时，断点才会生效。在这一节课的视频中，我们将学习它的具体使用用法。
+
+在上一节课我们有提到，对于一个处于生产环境的Web项目，如果我们想要对其进行调试，我们可以使用logpoints断点。虽然logpoints断点不会阻塞程序的运行，但它毕竟只是通过输出日志的方式进行调试，对于一些复杂的场景，这种做法的效率就会比较低。为了更快的利用调试来定位问题，使用普通断点是最好的方式，所以，对于这种**既想要使用普通断点又不想要请求被阻塞**的情况，我们就可以使用conditional breakpoint，使用它之后，我们可以为一个普通断点加上一个条件，只有当条件满足时，断点才会生效，通过这种方式来最小化调试带来的请求阻塞风险。
 
 #### 28 调试技巧4 inline breakpoint
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1MV411d76P) | [Youtube](https://youtu.be/neg3Qv71tQA)
+
+这一节课，我们会学习VS Code支持的另外一种特殊断点：**inline breakpoint**，当一行代码存在多个函数调用时，使用它，我们就可以在任意一个函数前面添加一个断点。在这一节课的视频中，我们将学习它的具体使用用法。
+
+Tip1: 课程中会用到以下代码片段：
+
+```js
+class Demo {
+    static getFoo() {
+        return "foo";
+    }
+
+    static getBoo() {
+        return "boo";
+    }
+
+    static getCoo() {
+        return "coo";
+    }
+}
+
+const info = Demo.getFoo();
+console.log(info);
+```
+
+Tip2: 课程中用到的serve命令，可以通过下面的命令来安装：
+
+```shell
+npm i -g serve
+```
+
+Tip3: 课程中用于模拟第三方库的链接是：
+
+[https://tsqcdn.oss-cn-shanghai.aliyuncs.com/lib.js](https://tsqcdn.oss-cn-shanghai.aliyuncs.com/lib.js)
+
 
 #### 29 调试技巧5 multi-target debugging
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1ke411s7A8) | [Youtube](https://youtu.be/m5eoYbE2jPI)
+
+这一节课，我们会学习：**multi-target debugging**，使用它，我们可以在VS Code中同时发起多个调试。
+
+当面对**前后端分离**等场景时，我们的项目可能会被拆分成多个子项目，每个子项目可以是不同的编程语言编写，为了能够对这些子项目同时进行联调，我们就可以使用VS Code提供的multi-target debugging功能，同时开启多个调试项。
+
+multi-target debugging的使用方式有两种，一种是通过依次启动单个调试配置项，另一种我认为更加方便，我们可以在launch.json中添加一个`compounds`配置项，通过它我们就能一键快速启动多个调试项。在这一节课的视频中，你将学到它们的具体用法。
+
+Tip: 课程中介绍了一个前后端分离项目，我将它上传到了Github，地址是：
+
+[https://github.com/tsq-vscode/multi-target-debugging](https://github.com/tsq-vscode/multi-target-debugging)
 
 #### 30 管理扩展
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1PQ4y1P795) | [Youtube](https://youtu.be/MWjDx_bFsAI)
 
 #### 31 介绍Command Palette
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1Dt4y1C7x1) | [Youtube](https://youtu.be/tkmHvPAK6Ik)
 
 
 [回到顶部](#课程详情)
