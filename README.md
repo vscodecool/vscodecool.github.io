@@ -533,7 +533,9 @@ VS Code的调试界面，我将它分成了四个部分，分别是：
 
 这一节课，我们会学习Debug sidebar的使用方式，它由五个部分组成，在调试过程中，其中的每个部分都会从不同的角度来帮助我们完成调试工作。
 
-课程中会使用以下代码片段：
+Debug sidebar一共由五个部分组成，从上到下分别是：VARIABLES、WATCH、CALL stack、LOADED SCRIPTS、BREAKPOINTS。这里面我个人觉得：学会VARIABLES、WATCH和CALL stack的用法非常的重要，利用VARIABLES，我们可以分析当前函数的本地变量；利用WATCH，我们可以使用本地变量组成我们想要的表达式并输出结果；利用CALL stack，我们可以理清函数的调用关系。
+
+Tip: 课程中会使用以下代码片段：
 
 ```js
 class Person {
@@ -559,7 +561,6 @@ const person = new Person("三", "张", 20);
 const text = person.say();
 console.log(text);
 ```
-Debug sidebar一共由五个部分组成，从上到下分别是：VARIABLES、WATCH、CALL stack、LOADED SCRIPTS、BREAKPOINTS。这里面我个人觉得：学会VARIABLES、WATCH和CALL stack的用法非常的重要，利用VARIABLES，我们可以分析当前函数的本地变量；利用WATCH，我们可以使用本地变量组成我们想要的表达式并输出结果；利用CALL stack，我们可以理清函数的调用关系。
 
 #### 23 Debug toolbar的使用方式
 
@@ -587,7 +588,13 @@ Debug sidebar一共由五个部分组成，从上到下分别是：VARIABLES、W
 
 这一节课，我们会学习VS Code调试时，非常重要的launch.json。
 
-课程中会使用以下代码片段：
+除了Node.js以外，其它场景的调试，我们都需要配置launch.json这个文件，所以学习和理解launch.json就显得格外重要。
+
+launch.json是用于调试的配置文件，这个配置文件里会指定一些非常重要的信息，比如说，当前调试的程序是什么语言编写的，是Java？是C#？还是C？等等。这个关键的信息必须要在launch.json中指定，为了指定这个信息，我们需要借助配置项`type`。
+
+除了`type`，还有一个配置项也很重要，叫做`request`，它有两个值可供选择，一个叫`launch`，一个叫`attach`。使用`launch`我们可以让VS Code去启动我们的程序，同时启动后的程序还支持调试。而`attach`的方式有点不一样，它并不会帮我们启动程序，而是通过为一个**已经在运行且还不支持调试**的程序**注入一个调试器**，让这个程序从不支持调试变成支持调试。
+
+Tip: 课程中会使用以下代码片段：
 
 ```js
 const http = require("http");
@@ -600,13 +607,6 @@ server.listen(3000, () => {
     console.log("Server is listening on 3000");
 });
 ```
-
-除了Node.js以外，其它场景的调试，我们都需要配置launch.json这个文件，所以学习和理解launch.json就显得格外重要。
-
-launch.json是用于调试的配置文件，这个配置文件里会指定一些非常重要的信息，比如说，当前调试的程序是什么语言编写的，是Java？是C#？还是C？等等。这个关键的信息必须要在launch.json中指定，为了指定这个信息，我们需要借助配置项`type`。
-
-除了`type`，还有一个配置项也很重要，叫做`request`，它有两个值可供选择，一个叫`launch`，一个叫`attach`。使用`launch`我们可以让VS Code去启动我们的程序，同时启动后的程序还支持调试。而`attach`的方式有点不一样，它并不会帮我们启动程序，而是通过为一个**已经在运行且还不支持调试**的程序**注入一个调试器**，让这个程序从不支持调试变成支持调试。
-
 
 #### 25 调试技巧1 搜索本地变量
 
@@ -688,13 +688,28 @@ Tip: 课程中介绍了一个前后端分离项目，我将它上传到了Github
 
 视频链接：| [B站](https://www.bilibili.com/video/BV1PQ4y1P795) | [Youtube](https://youtu.be/MWjDx_bFsAI)
 
+这一节课，我们会学习Activity Bar的第五个功能点，用于管理扩展的：Extensions。
+
+首先，对于这一块内容，有些人喜欢把它称为“插件”，有些人则喜欢把它称为“扩展”，在这门课程中，我会把它称作“扩展”。
+
+VS Code的扩展非常的丰富，我将它大致分成了以下三类：
+
+- **写代码相关**： 这一类的扩展最多，比如格式化代码的 "Prettier"、调试PHP代码的 "PHP Debug"等
+- **工具**：这些扩展以工具的形式集成在了VS Code当中，比如用于远程开发的 "Remote SSH"
+- **自定义相关**：比如用于更换主题、语言包、快捷键的扩展
+
+接着，我们来看一下Extensions的具体用法。Extensions这个工具主要用于扩展的管理，而扩展的管理常用的操作有：扩展的搜索、安装、禁用、删除等。在这一节课的视频中，我将以`DotENV`这个扩展为例，演示这些操作。
+
+
 #### 31 介绍Command Palette
 
 视频链接：| [B站](https://www.bilibili.com/video/BV1Dt4y1C7x1) | [Youtube](https://youtu.be/tkmHvPAK6Ik)
 
+Activity Bar的底部有一个按钮，名叫：Manager，Manager里面包含了一些VS Code的功能选项，其中有三个我认为比较重要，分别是Command Palette、Settings、User Snippets。这一节课，我们会先学习：Command Palette。
 
-[回到顶部](#课程详情)
+因为Command Palette会被经常使用，所以我们需要记住打开它的快捷键。这个快捷键，在Mac上是：` shift + ⌘ + p`，在Windows上是：`shift + ctrl + p`。
 
+接着，我们来了解下它的作用，它的作用是：**通过命令来执行一些操作**。VS Code中的一些操作，可以有多种方式来实现，以放大VS Code界面为例，我们可以通过菜单栏选项，也可以通过快捷键，还有就是通过Command Palette了。我们可以打开Command Palette，然后直接输入`zi`就能找到放大VS Code的命令。但是需要注意的是：有一些操作，我们只能通过Command Palette来实现，比如说更改VS Code语言包。正因为有些重要的操作只能在Command Palette里实现，所以它非常的重要。
 
 ### 第三章 文件及文件夹的使用
 ### 第四章 自定义VS Code
