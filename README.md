@@ -188,6 +188,7 @@ code [文件夹路径]     #用于打开指定路径下的文件夹
 - [29 调试技巧5 multi-target debugging](#29-调试技巧5-multi-target-debugging)
 - [30 管理扩展](#30-管理扩展)
 - [31 介绍Command Palette](#31-介绍command-palette)
+- [32 介绍Settings](#32-介绍settings)
 
 #### 08 用户界面概览
 
@@ -716,6 +717,18 @@ Activity Bar的底部有一个按钮，名叫：Manager，Manager里面包含了
 因为Command Palette会被经常使用，所以我们需要记住打开它的快捷键。这个快捷键，在Mac上是：` shift + ⌘ + p`，在Windows上是：`shift + ctrl + p`。
 
 接着，我们来了解下它的作用，它的作用是：**通过命令来执行一些操作**。VS Code中的一些操作，可以有多种方式来实现，以放大VS Code界面为例，我们可以通过菜单栏选项，也可以通过快捷键，还有就是通过Command Palette了。我们可以打开Command Palette，然后直接输入`zi`就能找到放大VS Code的命令。但是需要注意的是：有一些操作，我们只能通过Command Palette来实现，比如说更改VS Code语言包。正因为有些重要的操作只能在Command Palette里实现，所以它非常的重要。
+
+#### 32 介绍Settings
+
+视频链接：| [B站]() | [Youtube]()
+
+这一节课，我们会学习“Settings”这个功能选项，并理解其中的“User”和“Workspace”这两个重要的概念。
+
+“Settings”也就是我们所说的“设置”，不过和普通的桌面软件不一样，VS Code的设置有两种，一种是“User”范围下的设置，还有一种是“Workspace”下的设置。
+
+对于User设置，一旦我们对其中的设置进行了修改，那么这些修改会作用于**所有的项目**，而Workspace设置却不一样，在它里面的修改只能作用于**当前一个项目**。在实际的使用过程中，我们会通过修改User设置，来满足我们的一些个性化的使用需求，而通过修改Workspace设置，在团队协作时，就可以达到代码风格的统一。
+
+User设置和Workspace设置，其实它们的背后都有一个叫做“Settings.json”的配置文件，VS Code设置中出现的界面，其实就是对这份配置文件的可视化展现。利用它，我们不仅可以快速**将某个设置项恢复到默认值**，而且我们也可以通过直接编辑这个文件，**快速添加设置项的修改**。
 
 ### 第三章 文件及文件夹的使用
 ### 第四章 自定义VS Code
