@@ -720,7 +720,7 @@ Activity Bar的底部有一个按钮，名叫：Manager，Manager里面包含了
 
 #### 32 介绍Settings
 
-视频链接：| [B站]() | [Youtube](https://youtu.be/j2u-quDMWWk)
+视频链接：| [B站](https://www.bilibili.com/video/BV1fv411z7V1/) | [Youtube](https://youtu.be/j2u-quDMWWk)
 
 这一节课，我们会学习“Settings”这个功能选项，并理解其中的“User”和“Workspace”这两个重要的概念。
 
