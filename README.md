@@ -730,6 +730,10 @@ Activity Bar的底部有一个按钮，名叫：Manager，Manager里面包含了
 
 User设置和Workspace设置，其实它们的背后都有一个叫做“Settings.json”的配置文件，VS Code设置中出现的界面，其实就是对这份配置文件的可视化展现。利用它，我们不仅可以快速**将某个设置项快速恢复到默认值**，而且我们也可以通过直接编辑这个文件，**快速修改设置项**。
 
+Tip: VS Code所有的默认项，如果使用settings.json来表示，具体的值可以参考下面的官方文档：
+
+[https://code.visualstudio.com/docs/getstarted/settings#_default-settings](https://code.visualstudio.com/docs/getstarted/settings#_default-settings)
+
 ### 第三章 文件及文件夹的使用
 ### 第四章 自定义VS Code
 ### 第五章 代码编辑技巧
