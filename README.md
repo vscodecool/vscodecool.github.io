@@ -189,7 +189,7 @@ code [文件夹路径]     #用于打开指定路径下的文件夹
 - [30 管理扩展](#30-管理扩展)
 - [31 介绍Command Palette](#31-介绍command-palette)
 - [32 介绍Settings](#32-介绍settings)
-- [33 介绍User Snippets](#32-介绍user-snippets)
+- [33 介绍User Snippets](#33-介绍user-snippets)
 
 #### 08 用户界面概览
 
