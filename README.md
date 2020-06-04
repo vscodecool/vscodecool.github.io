@@ -189,6 +189,7 @@ code [文件夹路径]     #用于打开指定路径下的文件夹
 - [30 管理扩展](#30-管理扩展)
 - [31 介绍Command Palette](#31-介绍command-palette)
 - [32 介绍Settings](#32-介绍settings)
+- [33 介绍User Snippets](#32-介绍user-snippets)
 
 #### 08 用户界面概览
 
@@ -733,6 +734,91 @@ User设置和Workspace设置，其实它们的背后都有一个叫做“Setting
 Tip: 所有设置项的默认值，如果使用settings.json来表示，可以参考下面的官方文档：
 
 [https://code.visualstudio.com/docs/getstarted/settings#_default-settings](https://code.visualstudio.com/docs/getstarted/settings#_default-settings)
+
+33 介绍User Snippets
+
+视频链接：| [B站]() | [Youtube]()
+
+通过VS Code提供的User Snippets功能，我们可以创建属于自己的代码片段，以此来帮助我们快速编写代码，提升开发效率。
+
+User Snippets的配置文件中有两个关键的配置项，一个叫`prefix`，它用于指定**关键词**，在写代码的时候，我们输入完关键词，紧接着按`tab`键，就能立刻生成相应的代码片段，而另一个关键的配置项`body`就是用于配置代码片段的内容，它是一个数组类型，数组的每一项就代表代码片段的一行。
+
+我们在编写代码片段的内容时候，需要注意两件事：第一，如果一行代码中存在代码缩进，我们可以使用空格来代替或者使用`\t`；第二，如果该行代码存在`"`，我们需要使用反斜杠来对它进行转义，也就是：`\"`。
+
+在编写代码片段的时候，我们可以使用以$开头的特殊变量：$0、$1、$2、$3...。$0用于代码片段生成后，光标最后所处的位置，$1、$2、$3...等用于指定光标移动的位置，当我们按tab键时，光标会依次切换到$1、$2、$3所在的位置。
+
+除了$开头的特殊变量，VS Code还支持很多其它特殊变量，比如代表当前年的`$CURRENT_YEAR`，代表当前月的`$CURRENT_MONTH`等等，利用它们，我们可以创建内容丰富的注释。
+
+Tip1: 文本提到的代码片段生成工具，链接如下：
+
+[https://github.com/pawelgrzybek/snippet-generator](https://github.com/pawelgrzybek/snippet-generator)
+
+Tip2: 可以通过下面的文档，查看VS Code代码片段中支持的所有特殊变量：
+
+[https://code.visualstudio.com/docs/editor/userdefinedsnippets#_variables](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_variables)
+
+Tip3: 本节视频中用到的代码片段: `c.json`
+
+```
+{
+	"using stdio": {
+		"prefix": "io",
+		"body": [
+			"#include <stdio.h>"
+		]
+	},
+	"main function": {
+		"prefix": "m",
+		"body": [
+			"int main() {",
+			"\t$0",
+			"\treturn 0;",
+			"}"
+		]
+	},
+	"print": {
+		"prefix": "p",
+		"body": [
+			"printf(\"%$1\", $2);"
+		]
+	},
+	"print1": {
+		"prefix": "p1",
+		"body": [
+			"printf(\"%${1:you can use: i,s,c,f}\", $2);"
+		]
+	},
+	"print2": {
+		"prefix": "p2",
+		"body": [
+			"printf(\"%${1|i,s,c,f|}\", $2);"
+		]
+	},
+	"my main": {
+		"prefix": "mm",
+		"body": [
+			"#include <stdio.h>",
+			"",
+			"int main() {",
+			"    printf(\"%$1\", $2);",
+			"    return 0;",
+			"}"
+		],
+		"description": "my main"
+	},
+	"header comment": {
+		"prefix": "hc",
+		"body": [
+			"$BLOCK_COMMENT_START",
+			" * Author: tsq",
+			" * Date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"$BLOCK_COMMENT_END"
+		]
+	}
+}
+```
+
+这一节课是Activity Bar相关知识的最后一节课，下一节课，我们将学习它旁边的：Side Bar。
 
 ### 第三章 文件及文件夹的使用
 ### 第四章 自定义VS Code
