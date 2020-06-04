@@ -735,7 +735,7 @@ Tip: 所有设置项的默认值，如果使用settings.json来表示，可以�
 
 [https://code.visualstudio.com/docs/getstarted/settings#_default-settings](https://code.visualstudio.com/docs/getstarted/settings#_default-settings)
 
-33 介绍User Snippets
+#### 33 介绍User Snippets
 
 视频链接：| [B站]() | [Youtube]()
 
