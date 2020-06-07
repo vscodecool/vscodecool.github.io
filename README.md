@@ -190,6 +190,7 @@ code [文件夹路径]     #用于打开指定路径下的文件夹
 - [31 介绍Command Palette](#31-介绍command-palette)
 - [32 介绍Settings](#32-介绍settings)
 - [33 介绍User Snippets](#33-介绍user-snippets)
+- [34 隐藏Side Bar](#34-隐藏side-bar)
 
 #### 08 用户界面概览
 
@@ -819,6 +820,16 @@ Tip3: 本节视频中用到的代码片段: `c.json`
 ```
 
 这一节课是Activity Bar相关知识的最后一节课，下一节课，我们将学习它旁边的：Side Bar。
+
+#### 34 隐藏Side Bar
+
+在使用VS Code的过程中，我们常常希望为代码编辑区域留出更多的空间，这时我们可以选择隐藏Side Bar，而隐藏Side Bar最方便的操作是使用快捷键。
+
+隐藏Side Bar如下：
+
+- Mac: <kbd>command + B</kdb>
+- Win: <kbd>ctrl + B</kdb>
+
 
 ### 第三章 文件及文件夹的使用
 ### 第四章 自定义VS Code
