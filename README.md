@@ -827,8 +827,8 @@ Tip3: 本节视频中用到的代码片段: `c.json`
 
 隐藏Side Bar的快捷键如下：
 
-- Mac: <kbd>command + B</kdb>
-- Win: <kbd>ctrl + B</kdb>
+- Mac: <kbd>command + B</kbd>
+- Win: <kbd>ctrl + B</kbd>
 
 
 ### 第三章 文件及文件夹的使用
