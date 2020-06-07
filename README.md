@@ -825,7 +825,7 @@ Tip3: 本节视频中用到的代码片段: `c.json`
 
 在使用VS Code的过程中，我们常常希望为代码编辑区域留出更多的空间，这时我们可以选择隐藏Side Bar，而隐藏Side Bar最方便的操作是使用快捷键。
 
-隐藏Side Bar如下：
+隐藏Side Bar的快捷键如下：
 
 - Mac: <kbd>command + B</kdb>
 - Win: <kbd>ctrl + B</kdb>
