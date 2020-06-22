@@ -824,6 +824,8 @@ Tip3: 本节视频中用到的代码片段: `c.json`
 
 #### 34 隐藏Side Bar
 
+视频链接：| [B站](https://www.bilibili.com/video/BV1ZK4y1x7wq) | [Youtube](https://youtu.be/Om--qJsLXD4)
+
 在使用VS Code的过程中，我们常常希望为代码编辑区域留出更多的空间，这时我们可以选择隐藏Side Bar，而隐藏Side Bar最方便的操作是使用快捷键。
 
 隐藏Side Bar的快捷键如下：
@@ -832,6 +834,8 @@ Tip3: 本节视频中用到的代码片段: `c.json`
 - Win: <kbd>ctrl + B</kbd>
 
 #### 35 介绍Editor区域
+
+视频链接：| [B站](https://www.bilibili.com/video/BV1az4y1Q7J3) | [Youtube](https://youtu.be/dzveua1A7HI)
 
 这一节课将对 VS Code 的 Editor 区域做一个简单的介绍，你将学习到 minimap 以及 breadcrumbs 相关的知识。
 
