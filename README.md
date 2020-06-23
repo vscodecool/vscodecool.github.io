@@ -192,6 +192,7 @@ code [文件夹路径]     #用于打开指定路径下的文件夹
 - [33 介绍User Snippets](#33-介绍user-snippets)
 - [34 隐藏Side Bar](#34-隐藏side-bar)
 - [35 介绍Editor区域](#35-介绍editor区域)
+- [36 Zen Mode](#36-zen-mode)
 
 #### 08 用户界面概览
 
@@ -843,6 +844,31 @@ minimap 位于编辑器的右侧，它有两个作用，一是通过它我们可
 
 breadcrumbs 位于编辑器顶部，它其实是由两部分组成，以文件名为分割线，文件名左侧显示的是文件在项目中的相对路径，文件名右侧显示的是 Symbol 信息。Symbol 是对文件内容的一种展现方式，不同的文件类型有不同的展现方式，比如对于面向对象编程语言而言，常常是以类，类的属性，类的方法等方式来展现光标所处行的信息，而对于 html 文件，它则会以 Dom 树的结构来进行展现。Symbol 这个词在阅读 VS Code 官方文档时偶尔会遇到，我们只需要知道它所代表的意思就可以了。
 
+#### 36 Zen Mode
+
+视频链接：| [B站]() | [Youtube]()
+
+Zen Mode是VS Code提供的一种非常有趣的编辑模式，在这种模式下，我们可以更加专注的编写代码。
+
+为了开启Zen Mode，有三种方式可以选择，分别是：
+
+1. 使用菜单栏选项：View > Appearance > Zen Mode
+2. 通过Command Palette，输入关键词: zm
+3. 使用快捷键，Mac是： `Cmd + K + Z`；Win是 `Ctrl + K + Z`
+
+如果你喜欢在Zen Mode下进行工作，推荐你记住下面七个快捷键：
+
+| 功能                | Mac 上的快捷键              | Win 上的快捷键                      |
+| ------------------- | --------------------------- | ----------------------------------- |
+| 打开 Explorer       | `Cmd + Shift + E`           | `Ctrl + Shift + E`                  |
+| 打开 Search         | `Cmd + Shift + F`           | `Ctrl + Shift + F`                  |
+| 打开 Source Control | `Ctrl + Shift + G`          | `Ctrl + Shift + G`                  |
+| 打开 Debug          | `Cmd + Shift + D`           | `Ctrl + Shift + D`                  |
+| 打开 Extensions     | `Cmd + Shift + X`           | `Ctrl + Shift + X`                  |
+| 打开 Terminal       | `Ctrl + 数字键1左侧的那个键` | `Ctrl + '` ( 英文状态下的单引号) |
+| 隐藏 Sidebar        | `Cmd + B`                   | `Ctrl + B`                          |
+
+通过这七个快捷键，我们可以在Zen Mode下，很方便的完成一些常用操作。
 
 ### 第三章 文件及文件夹的使用
 ### 第四章 自定义VS Code
