@@ -873,7 +873,7 @@ Zen Mode是VS Code提供的一种非常有趣的编辑模式，在这种模式�
 
 #### 37 介绍Panels
 
-视频链接：| [B站]() | [Youtube]()
+视频链接：| [B站](https://www.bilibili.com/video/BV1CA411i7DE/) | [Youtube](https://youtu.be/ZDAqg2NgGSY)
 
 Panels由四个面板组合而成，这一节课，我们会分别学习PROBLEMS, OUTPUT以及DEBUG CONSOLE的使用方式。TERMINAL的学习会放在下一节课。
 
