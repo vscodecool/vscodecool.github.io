@@ -885,7 +885,7 @@ PROBLEMS, OUTPUT以及DEBUG CONSOLE这三个面板，基本上都是往外输出
 - OUTPUT：它会显示出VS Code自身以及第三方扩展的一些日志信息。
 - DEBUG CONSOLE：它有三个功能，第一，会显示调试器自身的日志信息，第二，会显示项目本身包含的控制台输出，第三，在调试过程中，可以输出本地变量，以及利用本地变量组成的表达式的值。
 
-38 Terminal的使用方式与技巧
+#### 38 Terminal的使用方式与技巧
 
 视频链接：| [B站](https://www.bilibili.com/video/BV1N54y1i79f/) | [Youtube](https://youtu.be/tNZ23C7YiEY)
 
