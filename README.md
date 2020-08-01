@@ -194,6 +194,7 @@ code [文件夹路径]     #用于打开指定路径下的文件夹
 - [35 介绍Editor区域](#35-介绍editor区域)
 - [36 Zen Mode](#36-zen-mode)
 - [37 介绍Panels](#37-介绍panels)
+- [38 Terminal的使用方式与技巧](#38-terminal的使用方式与技巧)
 
 #### 08 用户界面概览
 
@@ -883,6 +884,28 @@ PROBLEMS, OUTPUT以及DEBUG CONSOLE这三个面板，基本上都是往外输出
 - PROBLEMS：它会列出项目中存在问题的代码，而问题可以分成两种，一种是Warning，代表我们的代码写得并没有错，但是写得不够好，另一种是Error，代表我们的代码写得有错误。
 - OUTPUT：它会显示出VS Code自身以及第三方扩展的一些日志信息。
 - DEBUG CONSOLE：它有三个功能，第一，会显示调试器自身的日志信息，第二，会显示项目本身包含的控制台输出，第三，在调试过程中，可以输出本地变量，以及利用本地变量组成的表达式的值。
+
+38 Terminal的使用方式与技巧
+
+视频链接：| [B站](https://www.bilibili.com/video/BV1N54y1i79f/) | [Youtube](https://youtu.be/tNZ23C7YiEY)
+
+Terminal是VS Code自带的一个工具，在这个工具中我们可以使用命令来操作计算机以及切换不同的shell，在这一节课你将学习什么是Terminal以及和Terminal相关的计算机基础知识，同时也会了解众多shell的具体使用方式。
+
+对于软件开发者或者计算机系统管理员，常常需要使用命令的方式来操作计算机，而命令的执行需要一个环境，这个环境负责提供命令的输入、输出以及切换不同的shell。VS Code所自带的Terminal其实就是为提供这样的环境而生。
+
+因为一个操作系统通常会提供多种shell，所以在Terminal中执行命令的时候，我需要指定一种shell，Windows中，我们常常使用cmd或者powershell，如果安装了Git，那么我们也可以使用一个叫做“Git Bash”的shell，它支持众多linux命令，同时也会在命令行提示符中显示Git分支名，所以选择“Git Bash”也是一个不错的选择！在MacOS或者Linux中，我们通常使用bash和zsh，这里，我推荐大家使用zsh并且配上“oh my zsh”这个工具：https://github.com/ohmyzsh/ohmyzsh 。因为MacOS默认已经安装zsh，所以在MacOS上只需要再单独安装“oh my zsh”即可，而在Linux中，因为默认没有安装zsh，我们首先需要安装好zsh，下面列出了zsh的安装方法：
+
+```shell
+dnf install zsh	# for centos
+apt install zsh # for ubuntu
+```
+
+因为Terminal很重要，推荐大家记住打开或隐藏Terminal的快捷键:
+
+```shell
+ctrl + `(数字键1左侧的那个键)
+```
+
 
 ### 第三章 文件及文件夹的使用
 ### 第四章 自定义VS Code
