@@ -49,13 +49,9 @@
 
 #### 01 课程介绍
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1Y7411V7mU) | [Youtube](https://youtu.be/HfHsX2yxfNg)
-
 这一节课会对《VS Code入门教程2020》这门课程是如何被规划的做一个大致的介绍。整个课程会被分成八个章节进行讲解，你将了解到这八个章节分别会学习到什么内容。
 
 #### 02 如何获取帮助
-
-视频链接：| [B站](https://www.bilibili.com/video/BV1f741137Uf) | [Youtube](https://youtu.be/dxcPeXRNc-o)
 
 当你在学习这门课程中遇到一些疑问，而自己又无法解决时，如果需要我的帮助，你可以通过三种方式与我取得联系。
 
@@ -64,8 +60,6 @@
 3. 在Github上新建一个issue，地址是：[https://github.com/tsq/vscode-course](https://github.com/tsq/vscode-course)
 
 #### 03 介绍 Visual Studio Code
-
-视频链接：| [B站](https://www.bilibili.com/video/BV1U7411g75V) | [Youtube](https://youtu.be/8YbkDVtKAEg)
 
 这一节课会对VS Code这款代码编辑器做一个大致介绍，你将了解到VS Code相关的一些背景知识，以及最近几年它为什么如此受欢迎。
 
@@ -86,8 +80,6 @@ VS Code近些年来越来越受开发者欢迎，是因为它的身上存在这�
 
 #### 04 在macOS上安装VS Code
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1a7411J75b) | [Youtube](https://youtu.be/8QOxxs6XJoM)
-
 这一节课我们会学习如何在macOS上安装VS Code，其中会讲解一个可能会遇到的问题：安装完毕后，却无法打开VS Code。
 
 为了在macOS上安装VS Code，我们首先前往官网首页：[https://code.visualstudio.com](https://code.visualstudio.com)进行安装包的下载，下载完毕后会是个zip文件，将解压后的文件直接拖入Applications里就可以完成安装。
@@ -95,8 +87,6 @@ VS Code近些年来越来越受开发者欢迎，是因为它的身上存在这�
 但是我们在打开VS Code的时候可能会遇到无法打开的情况，这是因为你的macOS操作系统版本可能是Catalina，而Catalina在安全方面做了一些增强，对于从非Apple Store下载的应用可能就会遇到这种情况。为了解决这个问题，我们需要打开`System Preferences`，然后点击`Security & Privacy`，在里面就能解锁被阻止的VS Code了。
 
 #### 05 在Windows上安装VS Code
-
-视频链接：| [B站](https://www.bilibili.com/video/BV1u7411n7Cb) | [Youtube](https://youtu.be/QcNgBX1sAdc)
 
 这一节课我们会学习如何在Windows上一步步安装VS Code。
 
@@ -106,8 +96,6 @@ VS Code近些年来越来越受开发者欢迎，是因为它的身上存在这�
 
 
 #### 06 在Linux上安装VS Code
-
-视频链接：| [B站](https://www.bilibili.com/video/BV1r7411E7uC) | [Youtube](https://youtu.be/RsgPR8rcR_Q)
 
 这一节课我们会学习如何在Linux上一步步安装VS Code，我会以Ubuntu发行版做演示。
 
@@ -123,8 +111,6 @@ sudo dpkg -i [deb的路径]
 
 
 #### 07 如何用VS Code打开一个项目
-
-视频链接：| [B站](https://www.bilibili.com/video/BV1T741177ra) | [Youtube](https://youtu.be/THx4BsmPJ9U)
 
 这一节课，我们会学习VS Code第一个最基础的操作：如何用VS Code去打开一个项目，其中会介绍非常重要的`code`命令。
 
@@ -198,8 +184,6 @@ code [文件夹路径]     #用于打开指定路径下的文件夹
 
 #### 08 用户界面概览
 
-视频链接：| [B站](https://www.bilibili.com/video/BV167411L7SM) | [Youtube](https://youtu.be/Ys4mbfvk3M0)
-
 这一节课，我们会对VS Code的用户界面做一个大致的概览。
 
 VS Code的用户界面一共由五大部分组成，分别是：
@@ -214,8 +198,6 @@ VS Code的用户界面一共由五大部分组成，分别是：
 
 #### 09 资源管理器
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1E7411A7DZ) | [Youtube](https://youtu.be/q1ExNjkORAY)
-
 从这一节课开始，我们将具体学习VS Code用户界面的每一块内容，首先我们将学习最左侧的Activity Bar。这一节课，我们会学习Activity Bar的第一个功能点：Explorer（资源管理器）。
 
 **Explorer**它的功能主要是用于显示我们项目所包含的所有文件以及文件夹。在Side Bar中，我们可以看到，整个功能区被分成了三个部分，从上到下分别是：OPEN EDITORS、项目本身、OUTLINE。位于中间的项目本身，我们可以看到自己的项目名，以及项目里包含的文件及文件夹，如果我们将鼠标放在在项目名的右侧区域，我们可以看到四个功能键，它们分别用于在当前项目里新建一个文件、新建一个文件夹、刷新当前目录、折叠某个目录。
@@ -227,8 +209,6 @@ VS Code的用户界面一共由五大部分组成，分别是：
 
 #### 10 搜索工具
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1K7411w7VE) | [Youtube](https://youtu.be/ahOPXnVEyNA)
-
 这一节课，我们会学习Activity Bar的第二个功能点，用于搜索和替换的：Search。
 
 点击Search，我们可以在Side Bar顶部看到两个输入框，第一个输入框是用于文本的搜索，而第二个输入框则用于文本的替换。相较于替换，我感觉在平时的工作中使用“搜索”会更多些。通过搜索，我们可以很方便的找到某个单词或者某个句子在整个项目中出现过的地方，通过查看搜索词在其它文件中是如何被使用，如果是跟踪一个bug，那么就能通过这种方式来快速追踪bug的来源，而如果我们是刚接手一个项目，就很有可能对其中的一些函数、类或者组件的用法不太熟悉，那么就能通过这种方式来找到这些函数、类或者组件出现过的地方，并参考它们是如何被写的。
@@ -236,8 +216,6 @@ VS Code的用户界面一共由五大部分组成，分别是：
 搜索和替换的使用方法很简单，直接在输入框里输入相应的单词就可以，但是VS Code还针对搜索和替换提供了一些高级选项，通过这些高级选项，我们可以进一步缩小查询结果的范围，当遇到比较大的项目时，开启这些选项还是很有用的，可以帮助我节省查看搜索结果所花费的时间，在这一节课的视频中，你可以看到这些高级选项具体是如何工作的。
 
 #### 11 源代码管理
-
-视频链接：| [B站](https://www.bilibili.com/video/BV1A7411A7To) | [Youtube](https://youtu.be/XQVPHlAks-s)
 
 这一节课，我们会学习Activity Bar的第三个功能点，用于Git版本控制的：Source Control。
 
@@ -289,8 +267,6 @@ ssh -T git@github.com
 
 #### 12 在macOS上搭建Git环境
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1xj411f7ur) | [Youtube](https://youtu.be/ybcoXlTrmmM)
-
 这一节课，我们将学习如何在macOS上搭建Git环境，为我们后面学习Source Control做好准备。
 
 为了安装Git，我们将按照[第11课](#11-源代码管理)中提到的五个步骤来操作：
@@ -333,8 +309,6 @@ ssh -T git@github.com
 ```
 
 #### 13 在Windows上搭建Git环境
-
-视频链接：| [B站](https://www.bilibili.com/video/BV1x7411F7HV) | [Youtube](https://youtu.be/eft749KMZJM)
 
 这一节课，我们将学习如何在Windows上搭建Git环境，为我们后面学习Source Control做好准备。
 
@@ -384,8 +358,6 @@ ssh -T git@github.com
 
 #### 14 在Linux上搭建Git环境
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1V7411u7iA) | [Youtube](https://youtu.be/GPCzDPVCQ6M)
-
 这一节课，我们将学习如何在Linux上搭建Git环境，为我们后面学习Source Control做好准备，我将以Ubuntu桌面版做演示。
 
 为了安装Git，我们将按照[第11课](#11-源代码管理)中提到的五个步骤来操作：
@@ -434,8 +406,6 @@ ssh -T git@github.com
 
 #### 15 在VS Code中使用Git - Part1
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1f7411N7Dj) | [Youtube](https://youtu.be/bK7dr7eG6KM)
-
 这一节课，我们将学习使用Source Control来完成一些Git常用操作。
 
 在前面的三节课里，我们完成了Git环境的搭建工作，所以这一节课开始，我们就来正式学习VS Code的Source Control。为了更好的学习Source Control，对于接下来的每一个演示项目，我都会准备两份。这两份其实它们的内容完全一致，不同的只是项目名而已。其中的一份，我会使用git命令加vim的方式进行操作，而另一份，我会使用VS Code来操作。之所以采用这种方式，第一，可以帮助你复习Git的常用命令。说真的，使用命令来操作Git是非常重要的，因为有些时候我们只能通过命令来完成Git操作，比如说在远程的Linux服务器上进行Git操作时，我们就只能通过Git命令。所以我个人的建议是：我们可以使用Git的GUI工具（*比如 SourceTree、Github Desktop、Gitkraken以及我们即将学习的Source Control*），但是一定要先学会如何使用命令来完成一些Git常用操作！第二，采用这种方式可以带来另外一个好处，那就是我们可以更好的理解在使用Source Control的过程中，它的底层到底做了什么操作，理解了这些底层操作，有时候反而可以帮助我们更加灵活的利用Source Control。第三，采用这种方式后，我们可以很好的进行比较：哪些操作使用Source Control真的很有优势，而哪些操作其实使用命令也很方便。
@@ -457,8 +427,6 @@ Git的操作有很多，在这一节课里，我们会学习利用本地环境�
 
 #### 16 在VS Code中使用Git - Part2
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1A7411T7VC) | [Youtube](https://youtu.be/okSG4I99XuY)
-
 这一节课，我们将学习使用Source Control完成与远程仓库相关的Git操作。
 
 与远程仓库相关的Git操作中，常用的有三个，它们分别是：
@@ -470,8 +438,6 @@ Git的操作有很多，在这一节课里，我们会学习利用本地环境�
 在这一节课的视频中，你可以看到如何利用Git命令以及Source Control来完成上面三个操作。
 
 #### 17 介绍调试工具
-
-视频链接：| [B站](https://www.bilibili.com/video/BV1m7411N7aC/) | [Youtube](https://youtu.be/wpZ_jKxFLVw)
 
 这一节课，我们会学习Activity Bar的第四个功能点：Debug。
 
@@ -489,8 +455,6 @@ VS Code中涉及调试的知识非常的多，我将这些知识分成了两类�
 
 #### 18 在macOS上搭建Node.js开发环境
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1vE411H7wh) | [Youtube](https://youtu.be/vmii_pB44gs)
-
 这一节课，我们将学习在macOS上搭建Node.js开发环境，为后面利用Node.js来学习调试的通用知识做好准备。
 
 在macOS上搭建Node.js开发环境很简单，一共两步：
@@ -499,8 +463,6 @@ VS Code中涉及调试的知识非常的多，我将这些知识分成了两类�
 2. 校验安装是否成功：在Terminal中输入`node -v`
 
 #### 19 在Windows上搭建Node.js开发环境
-
-视频链接：| [B站](https://www.bilibili.com/video/BV1gE411n7Ej) | [Youtube](https://youtu.be/8azTl1KRZGg)
 
 这一节课，我们将学习在Windows上搭建Node.js开发环境，为后面利用Node.js来学习调试的通用知识做好准备。
 
@@ -523,8 +485,6 @@ VS Code中涉及调试的知识非常的多，我将这些知识分成了两类�
 
 #### 21 调试界面概览
 
-视频链接：| [B站](https://www.bilibili.com/video/BV18E41147NM) | [Youtube](https://youtu.be/2Q_FeLtgXcI)
-
 这一节课，我们将对VS Code的调试界面做一个大致的概览。
 
 VS Code的调试界面，我将它分成了四个部分，分别是：
@@ -535,8 +495,6 @@ VS Code的调试界面，我将它分成了四个部分，分别是：
 4. 位于Side Bar中的Debug sidebar，它由多个部分组成，用于显示本地变量、计算表达式、显示函数调用栈、断点管理等功能
 
 #### 22 Debug sidebar的使用方式
-
-视频链接：| [B站](https://www.bilibili.com/video/BV1HE411x7gi) | [Youtube](https://youtu.be/prO6u1AUHDo)
 
 这一节课，我们会学习Debug sidebar的使用方式，它由五个部分组成，在调试过程中，其中的每个部分都会从不同的角度来帮助我们完成调试工作。
 
@@ -571,8 +529,6 @@ console.log(text);
 
 #### 23 Debug toolbar的使用方式
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1nA411b7QA) | [Youtube](https://youtu.be/0peiVKd37wI)
-
 这一节课，我们会学习Debug toolbar的使用方式，它里面包含里用于控制程序执行流程的六个小工具。
 
 首先我想强调的是：学会使用Debug Toolbar**非常的重要**，它将直接关系到我们能否顺利完成调试任务，所以建议你一定要牢牢掌握这一节课的内容。
@@ -590,8 +546,6 @@ console.log(text);
 最后一个是**step out**，它和**step into**刚好相反，**step into**是跳入函数，而**step out**则是跳出函数。它的使用场景常常是：当我们身处某个函数内部，同时这个函数的代码行数又很多，我们可能利用单步调试，运行了前面几行代码过后，就达到了自己的调试目的，这时候为了避免再单步执行后面大段我们不感兴趣的代码，我就可以使用它来快速跳出当前函数，节省时间。
 
 #### 24 介绍launch.json
-
-视频链接：| [B站](https://www.bilibili.com/video/BV1Jf4y1S7Bw) | [Youtube](https://youtu.be/4Jqnf-E9VSY)
 
 这一节课，我们会学习VS Code调试时，非常重要的launch.json。
 
@@ -617,15 +571,11 @@ server.listen(3000, () => {
 
 #### 25 调试技巧1 搜索本地变量
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1Wi4y1t7VQ) | [Youtube](https://youtu.be/Fv_0UDflXbk)
-
 这一节课，我们会学习**搜索本地变量**这个调试小技巧，利用它我们可以从大量的信息中快速寻找到自己想要的结果。
 
 在调试过程中，VARIABLES里会显示当前函数的所有本地变量，有些情况下，这些本地变量的数量会非常对多，这种情况下，为了从中快速找到自己想要的值，我们就可以将光标定位到VARIABLES区域，然后直接输入搜索关键词，这样VS Code会自动定位到符合搜索词的变量并高亮其内容。在这一节课的视频中，我们将学习它的具体使用用法。
 
 #### 26 调试技巧2 logpoints
-
-视频链接：| [B站](https://www.bilibili.com/video/BV1wz411z7Z7) | [Youtube](https://youtu.be/gBpl4-1VsYU)
 
 这一节课，我们会学习一种特殊的断点：**logpoints**，使用它我们可以以非阻塞、打日志的方式来调试程序
 
@@ -633,15 +583,11 @@ server.listen(3000, () => {
 
 #### 27 调试技巧3 conditional breakpoint
 
-视频链接：| [B站](https://www.bilibili.com/video/BV11k4y1r7zY) | [Youtube](https://youtu.be/nyv7_cVTn0M)
-
 这一节课，我们会学习一种特殊的断点：**conditional breakpoint**，使用它我们可以为一个断点添加条件判断语句，条件判断语句返回真时，断点才会生效。在这一节课的视频中，我们将学习它的具体使用用法。
 
 在上一节课我们有提到，对于一个处于生产环境的Web项目，如果我们想要对其进行调试，我们可以使用logpoints断点。虽然logpoints断点不会阻塞程序的运行，但它毕竟只是通过输出日志的方式进行调试，对于一些复杂的场景，这种做法的效率就会比较低。为了更快的利用调试来定位问题，使用普通断点是最好的方式，所以，对于这种**既想要使用普通断点又不想要请求被阻塞**的情况，我们就可以使用conditional breakpoint，使用它之后，我们可以为一个普通断点加上一个条件，只有当条件满足时，断点才会生效，通过这种方式来最小化调试带来的请求阻塞风险。
 
 #### 28 调试技巧4 inline breakpoint
-
-视频链接：| [B站](https://www.bilibili.com/video/BV1MV411d76P) | [Youtube](https://youtu.be/neg3Qv71tQA)
 
 这一节课，我们会学习VS Code支持的另外一种特殊断点：**inline breakpoint**，当一行代码存在多个函数调用时，使用它，我们就可以在任意一个函数前面添加一个断点。在这一节课的视频中，我们将学习它的具体使用用法。
 
@@ -679,8 +625,6 @@ Tip3: 课程中用于模拟第三方库的链接是：
 
 #### 29 调试技巧5 multi-target debugging
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1ke411s7A8) | [Youtube](https://youtu.be/m5eoYbE2jPI)
-
 这一节课，我们会学习：**multi-target debugging**，使用它，我们可以在VS Code中同时发起多个调试。
 
 当面对**前后端分离**等场景时，我们的项目可能会被拆分成多个子项目，每个子项目可以是不同的编程语言编写，为了能够对这些子项目同时进行联调，我们就可以使用VS Code提供的multi-target debugging功能，同时开启多个调试。
@@ -699,8 +643,6 @@ Tip2: 课程中介绍了一个前后端分离项目，我将它上传到了Githu
 
 #### 30 管理扩展
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1PQ4y1P795) | [Youtube](https://youtu.be/MWjDx_bFsAI)
-
 这一节课，我们会学习Activity Bar的第五个功能点，用于管理扩展的：Extensions。
 
 首先，对于这一块内容，有些人喜欢把它称为“插件”，有些人则喜欢把它称为“扩展”，在这门课程中，我会把它称作“扩展”。
@@ -716,8 +658,6 @@ VS Code的扩展非常的丰富，我将它大致分成了以下三类：
 
 #### 31 介绍Command Palette
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1Dt4y1C7x1) | [Youtube](https://youtu.be/tkmHvPAK6Ik)
-
 Activity Bar的底部有一个按钮，名叫：Manager，Manager里面包含了一些VS Code的功能选项，其中有三个我认为比较重要，分别是Command Palette、Settings、User Snippets。这一节课，我们会先学习：Command Palette。
 
 因为Command Palette会被经常使用，所以我们需要记住打开它的快捷键。这个快捷键，在Mac上是：` shift + ⌘ + p`，在Windows上是：`shift + ctrl + p`。
@@ -725,8 +665,6 @@ Activity Bar的底部有一个按钮，名叫：Manager，Manager里面包含了
 接着，我们来了解下它的作用，它的作用是：**通过命令来执行一些操作**。VS Code中的一些操作，可以有多种方式来实现，以放大VS Code界面为例，我们可以通过菜单栏选项，也可以通过快捷键，还有就是通过Command Palette了。我们可以打开Command Palette，然后直接输入`zi`就能找到放大VS Code的命令。但是需要注意的是：有一些操作，我们只能通过Command Palette来实现，比如说更改VS Code语言包。正因为有些重要的操作只能在Command Palette里实现，所以它非常的重要。这一节课的视频中，你将看到它的具体使用方法。
 
 #### 32 介绍Settings
-
-视频链接：| [B站](https://www.bilibili.com/video/BV1fv411z7V1/) | [Youtube](https://youtu.be/j2u-quDMWWk)
 
 这一节课，我们会学习“Settings”这个功能选项，并理解其中的“User”和“Workspace”这两个重要的概念。
 
@@ -741,8 +679,6 @@ Tip: 所有设置项的默认值，如果使用settings.json来表示，可以�
 [https://code.visualstudio.com/docs/getstarted/settings#_default-settings](https://code.visualstudio.com/docs/getstarted/settings#_default-settings)
 
 #### 33 介绍User Snippets
-
-视频链接：| [B站](https://www.bilibili.com/video/BV1PZ4y1H7SJ) | [Youtube](https://youtu.be/rbWDQPvM-jQ)
 
 通过VS Code提供的User Snippets功能，我们可以创建属于自己的代码片段，以此来帮助我们快速编写代码，提升开发效率。
 
@@ -827,8 +763,6 @@ Tip3: 本节视频中用到的代码片段: `c.json`
 
 #### 34 隐藏Side Bar
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1ZK4y1x7wq) | [Youtube](https://youtu.be/Om--qJsLXD4)
-
 在使用VS Code的过程中，我们常常希望为代码编辑区域留出更多的空间，这时我们可以选择隐藏Side Bar，而隐藏Side Bar最方便的操作是使用快捷键。
 
 隐藏Side Bar的快捷键如下：
@@ -838,8 +772,6 @@ Tip3: 本节视频中用到的代码片段: `c.json`
 
 #### 35 介绍Editor区域
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1az4y1Q7J3) | [Youtube](https://youtu.be/dzveua1A7HI)
-
 这一节课将对 VS Code 的 Editor 区域做一个简单的介绍，你将学习到 minimap 以及 breadcrumbs 相关的知识。
 
 minimap 位于编辑器的右侧，它有两个作用，一是通过它我们可以对源文件的内容做一个大致的概览，二是可以通过拖动它来快速移动到指定对代码区域。VS Code 默认会显示 minimap，如果你觉得 minimap 对你并没有什么作用，或者是觉得它占用了过多的编辑器空间，我们就可以选择将 minimap 隐藏，隐藏对方式是：点击顶部`View`菜单栏并点击里面的`Show Minimap`菜单项。
@@ -847,8 +779,6 @@ minimap 位于编辑器的右侧，它有两个作用，一是通过它我们可
 breadcrumbs 位于编辑器顶部，它其实是由两部分组成，以文件名为分割线，文件名左侧显示的是文件在项目中的相对路径，文件名右侧显示的是 Symbol 信息。Symbol 是对文件内容的一种展现方式，不同的文件类型有不同的展现方式，比如对于面向对象编程语言而言，常常是以类，类的属性，类的方法等方式来展现光标所处行的信息，而对于 html 文件，它则会以 Dom 树的结构来进行展现。Symbol 这个词在阅读 VS Code 官方文档时偶尔会遇到，我们只需要知道它所代表的意思就可以了。
 
 #### 36 Zen Mode
-
-视频链接：| [B站](https://www.bilibili.com/video/BV1FK411W7y4) | [Youtube](https://youtu.be/nl15Xv2kQ7E)
 
 Zen Mode是VS Code提供的一种非常有趣的编辑模式，在这种模式下，我们可以更加专注的编写代码。
 
@@ -874,8 +804,6 @@ Zen Mode是VS Code提供的一种非常有趣的编辑模式，在这种模式�
 
 #### 37 介绍Panels
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1CA411i7DE/) | [Youtube](https://youtu.be/ZDAqg2NgGSY)
-
 Panels由四个面板组合而成，这一节课，我们会分别学习PROBLEMS, OUTPUT以及DEBUG CONSOLE的使用方式。TERMINAL的学习会放在下一节课。
 
 PROBLEMS, OUTPUT以及DEBUG CONSOLE这三个面板，基本上都是往外输出一些信息，在平时的项目开发过程中，在合适的时候，如果我们能够利用
@@ -886,8 +814,6 @@ PROBLEMS, OUTPUT以及DEBUG CONSOLE这三个面板，基本上都是往外输出
 - DEBUG CONSOLE：它有三个功能，第一，会显示调试器自身的日志信息，第二，会显示项目本身包含的控制台输出，第三，在调试过程中，可以输出本地变量，以及利用本地变量组成的表达式的值。
 
 #### 38 Terminal的使用方式与技巧
-
-视频链接：| [B站](https://www.bilibili.com/video/BV1N54y1i79f/) | [Youtube](https://youtu.be/tNZ23C7YiEY)
 
 Terminal是VS Code自带的一个工具，在这个工具中我们可以使用命令来操作计算机以及切换不同的shell，在这一节课你将学习什么是Terminal以及和Terminal相关的计算机基础知识，同时也会了解众多shell的具体使用方式。
 
