@@ -4,6 +4,9 @@
 
 在阅读这篇文档的过程中，如果你发现了一些错误，欢迎你在Github上提出[pr](https://github.com/tsq/vscode-course/pulls)或者[issue](https://github.com/tsq/vscode-course/issues)。
 
+另外，我将视频内容分别上传到了[Youbube](https://www.youtube.com/watch?v=HfHsX2yxfNg&list=PLNEp_Xli9W_lUQTtRYG7883bGah63UkNB)、[Bilibili](https://space.bilibili.com/30677217/channel/detail?cid=105022)、[Toutiao](http://www.ixigua.com/pseries/6856506428144747012)这三个平台，你可以点击并查看具体的课程内容。
+
+
 **截止到目前，整个课程还没有制作完成，不过我会加油的！**
 
 ## 课程详情
