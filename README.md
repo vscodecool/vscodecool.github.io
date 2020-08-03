@@ -2,9 +2,9 @@
 
 这门课程是我从2020年2月份开始，在网上投稿的一门学习VS Code的视频教程，而之所以创建你现在正在看的这篇文档，是因为在下方的[课程详情](#课程详情)部分，你可以看到，我将每一节课的内容也以文字版的形式做了简单的介绍。这样做，一是，你可以通过搜索关键词来快速找到自己感兴趣的话题(*搜索，你可以利用浏览器自带的搜索快捷键比如：mac是`command+f`；windows是`ctrl+f`*)；二是，我将视频中涉及到的一些重要链接、命令、代码等信息在这里进行了记录，方便你在学习过程中查看和复制；三是，在已发布的视频当中，会有一些知识点的遗漏，对于遗漏的部分，我会在这里通过文字进行补充。
 
-在阅读这篇文档的过程中，如果你发现了一些错误，欢迎你在Github上提出[pr](https://github.com/tsq/vscode-course/pulls)或者[issue](https://github.com/tsq/vscode-course/issues)。
+在阅读这篇文档的过程中，如果发现了一些错误，欢迎在Github上提出[pr](https://github.com/tsq/vscode-course/pulls)或者[issue](https://github.com/tsq/vscode-course/issues)。
 
-另外，我将视频内容分别上传到了[Youbube](https://www.youtube.com/watch?v=HfHsX2yxfNg&list=PLNEp_Xli9W_lUQTtRYG7883bGah63UkNB)、[Bilibili](https://space.bilibili.com/30677217/channel/detail?cid=105022)、[Toutiao](http://www.ixigua.com/pseries/6856506428144747012)这三个平台，你可以点击并查看具体的课程内容。
+另外，我将视频分别上传到了[Youbube](https://www.youtube.com/watch?v=HfHsX2yxfNg&list=PLNEp_Xli9W_lUQTtRYG7883bGah63UkNB)、[Bilibili](https://space.bilibili.com/30677217/channel/detail?cid=105022)、[Toutiao](http://www.ixigua.com/pseries/6856506428144747012)这三个平台，你可以点击它们并查看视频内容。
 
 
 **截止到目前，整个课程还没有制作完成，不过我会加油的！**
