@@ -856,6 +856,7 @@ VS Code的用户界面由5个部分组成，每一个部分里面都包含了很
 - [42 管理文件及文件夹](#42-管理文件及文件夹)
 - [43 Dirty Write](#43-dirty-write)
 - [44 Preview Mode](#44-preview-mode)
+
 #### 41 文件及文件夹的三个特点
 
 相较于常见的代码编辑器，比如Visual Studio、Xcode、Intellig IDEA，VS Code在文件及文件夹的使用方式上存在3个特点，这一节课，我们就来探讨一些这些不同之处，以此来更好的认识VS Code。
@@ -880,7 +881,7 @@ VS Code的用户界面由5个部分组成，每一个部分里面都包含了很
 
 另外，上下文菜单中还有几个比较常用的选项，第一个是将文件或文件夹在磁盘中进行打开，这个选项在Mac上叫“Reveal in Finder”，在Win上叫“Reveal in File Explorer”，在Linux上叫“Open Containing Folder”；第二个常用选项是“Open in Integrated Terminal”，使用它，我们可以快速打开Terminal且Terminal的当前工作目录为该文件所在目录；第三个常用选项是“Copy Path”用于获取文件或文件夹的绝对路径；第四个常用选项是“Copy Relative Path”用于获取文件或文件夹的相对路径。
 
-##### 43 Dirty Write
+#### 43 Dirty Write
 
 当我们在VS Code对某个文件进行修改并保存时，可能会出现文件无法保存的现象，这种现场发生的原因常常是因为触发了Dirty Write，这一节课，我们就来详细了解一下Dirty Write。
 
@@ -898,7 +899,7 @@ Dirty Write的发生是因为经历了如下三个步骤：
 
 在实际的工作中，编程语言的包管理工具的配置文件常常会发生dirty write现象，在使用的时候，我们需要注意下：对包管理工具的配置文件进行修改后，要及时进行保存，以免触发Dirty Write。
 
-##### 44 Preview Mode
+#### 44 Preview Mode
 
 当我们在VS Code中打开一个文件的时候，VS Code默认会以Preview mode的方式对文件进行显示，这会导致新打开的文件并不会独自占用一个Tab，有时候这并不是我们希望的结果。
 
