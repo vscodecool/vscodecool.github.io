@@ -932,7 +932,11 @@ Dirty Write的发生是因为经历了如下三个步骤：
 
 在项目开发过程中，我们经常会打开多个文件，随着已打开文件的不断增多，我们就需要一种方法能够在这些文件之间做快速切换。
 
-在VS Code中，做文件切换最方便的方式是使用快捷键<kbd>Ctrl+<kbd>Tab</kbd>，它的具体使用方法是：1，按住<kbd>Ctrl</kbd>+<kbd>Tab</kbd>；2，不松<kbd>Ctrl</kbd>，依靠单击<kbd>Tab</kbd>选择文件；3，释放<kbd>Ctrl</kbd>打开被选文件。
+在VS Code中，做文件切换最方便的方式是使用快捷键<kbd>Ctrl</kbd>+<kbd>Tab</kbd>，它的具体使用方法是：
+
+1. 按住<kbd>Ctrl</kbd>+<kbd>Tab</kbd>
+2. 不松<kbd>Ctrl</kbd>，依靠单击<kbd>Tab</kbd>选择文件
+3. 释放<kbd>Ctrl</kbd>打开被选文件。
 
 **单个文件内部**
 
