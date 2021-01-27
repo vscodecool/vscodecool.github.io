@@ -478,8 +478,6 @@ VS Code中涉及调试的知识非常的多，我将这些知识分成了两类�
 
 #### 20 在Linux上搭建Node.js开发环境
 
-视频链接：| [B站](https://www.bilibili.com/video/BV1fE411E78d) | [Youtube](https://youtu.be/4Giit0CR9XE)
-
 这一节课，我们将学习在Linux上搭建Node.js开发环境，为后面利用Node.js来学习调试的通用知识做好准备，我将使用Ubuntu桌面版做演示。
 
 在Linux上搭建Node.js开发环境的方法有很多，我推荐如下方法：
@@ -872,6 +870,7 @@ VS Code的用户界面由5个部分组成，每一个部分里面都包含了很
 - [58 文件使用技巧14: 配置项-Compact Folders](#58-文件使用技巧14-配置项-compact-folders)
 - [59 文件使用技巧15: Screencast Mode](#59-文件使用技巧15-screencast-mode)
 - [60 文件使用技巧16: Save All](#60-文件使用技巧16-save-all)
+- [61 文件使用技巧17: 在Source Control中打开文件](#61-文件使用技巧17-在source-control中打开文件)
 
 #### 41 文件及文件夹的三个特点
 
@@ -1093,6 +1092,11 @@ VS Code里有一个特殊的功能叫做“Screencast Mode”，一旦我们将�
 - 方式二：通过快捷键。macOS是“Option + Mac + S”， Windows是“Ctrl + Shift + S”。
 - 方式三：通过命令。打开Command Palette，输入“saveall”，找到命令“Save All”。
 
+#### 61 文件使用技巧17: 在Source Control中打开文件
+
+在Source Control中，当我们点击某个文件，VS Code这时会打开差异视图，我们在对文件内容做对比的时候，如果发现需要对文件做继续修改，这时我们可以利用Source Control的“Open File”功能。
+
+“Open File”这个功能键存在于两个地方，一个是顶部右上角第一个图标，还有一个是在文件名右侧第一个图标，点击它，我们就可以快速将这个文件打开。
 
 ### 第四章 自定义VS Code
 ### 第五章 代码编辑技巧
