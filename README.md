@@ -1123,7 +1123,7 @@ Source Control中的文件显示顺序可以被调整，在修改文件过多的
 
 为了配置，我们需要在`Settings`里面搜索`files exclude`找到`Files: Exclude`这个选项，接着点击`Add Pattern`按钮新增一个隐藏配置项。
 
-为了减少影响范围，建议在使用“Workspace”范围下修改这个配置项。
+为了减少影响范围，建议在`Workspace`范围下修改这个配置项。
 
 ### 第四章 自定义VS Code
 ### 第五章 代码编辑技巧
