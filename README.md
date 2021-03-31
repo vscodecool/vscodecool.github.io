@@ -874,6 +874,7 @@ VS Code的用户界面由5个部分组成，每一个部分里面都包含了很
 - [62 文件使用技巧18: 在Source Control中调整文件的排序规则](#62-文件使用技巧18-在source-control中调整文件的排序规则)
 - [63 文件使用技巧19: 配置项-Wrap tab](#63-文件使用技巧19-配置项-wrap-tab)
 - [64 文件使用技巧20: 配置项-Files exclude](#64-文件使用技巧20-配置项-files-exclude)
+- [65 文件使用技巧21: Open in editor](#65-文件使用技巧21-open-in-editor)
 
 #### 41 文件及文件夹的三个特点
 
@@ -1124,6 +1125,13 @@ Source Control中的文件显示顺序可以被调整，在修改文件过多的
 为了配置，我们需要在`Settings`里面搜索`files exclude`找到`Files: Exclude`这个选项，接着点击`Add Pattern`按钮新增一个隐藏配置项。
 
 为了减少影响范围，建议在`Workspace`范围下修改这个配置项。
+
+#### 65 文件使用技巧21: Open in editor
+
+在VS Code中做搜索时，搜索结果会出现在sidebar中，我们可以通过点击sidebar列出的每一项来查看搜索结果详情。这是VS Code提供的默认方式，需要我们对每一个搜索结果项先手动点击再查看详情。除了这种方式，查看搜索结果时，VS Code还提供了另外一种较为简便的方式，叫做“Open in editor”。
+
+在sidebar的搜索结果列表的最上方，我们可以看见一个按钮叫做“Open in editor”，点击它就可以将当前搜索结果在一个新的editor中显示，这时所有的搜索结果就会在这一个editor中显示，方便我们更快的查看所有的搜索结果。
+
 
 ### 第四章 自定义VS Code
 ### 第五章 代码编辑技巧
