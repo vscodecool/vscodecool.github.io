@@ -284,7 +284,7 @@ ssh -T git@github.com
 
 ```shell
 git config --global user.name "your name" 
-git config --global user.email your@example.com
+git config --global user.email "your@example.com"
 ```
 *P.S. 将`your name`替换成你自己的Github用户名，将`your@example.com`替换成注册Github时填写的邮箱。*
 
@@ -329,7 +329,7 @@ ssh -T git@github.com
 
 ```shell
 git config --global user.name "your name" 
-git config --global user.email your@example.com
+git config --global user.email "your@example.com"
 ```
 
 *P.S. 将`your name`替换成你自己的Github用户名，将`your@example.com`替换成注册Github时填写的邮箱。*
@@ -379,7 +379,7 @@ sudo apt update && sudo apt install git -y
 
 ```shell
 git config --global user.name "your name" 
-git config --global user.email your@example.com
+git config --global user.email "your@example.com"
 ```
 
 *P.S. 将`your name`替换成你自己的Github用户名，将`your@example.com`替换成注册Github时填写的邮箱。*
