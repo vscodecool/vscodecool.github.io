@@ -1276,8 +1276,9 @@ Parameters: `$REPO`
 
 最后补充一个知识点：对于Github上一个项目，可以有多种方式将它在一个外部的编辑器中快速打开。
 
-1. `.`: 使用按键"点"
-2. `1s`: 手动更改URL，例如：
+**1. `.`: 使用按键"点"**
+
+**2. `1s`: 手动更改URL，例如：**
 
 https://github.com/tsq/vscode-course 
 
@@ -1285,7 +1286,7 @@ https://github.com/tsq/vscode-course
 
 https://github1s.com/tsq/vscode-course
 
-3. `box`: 手动更改URL，例如：
+**3. `box`: 手动更改URL，例如：**
 
 https://github.com/tsq/vscode-course 
 
@@ -1293,7 +1294,7 @@ https://github.com/tsq/vscode-course
 
 https://githubbox.com/tsq/vscode-course
 
-比较适合于静态HTML或者是webapp。
+这比较适合于静态HTML或者是webapp。
 
 ### 第四章 自定义VS Code
 ### 第五章 代码编辑技巧
