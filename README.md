@@ -887,6 +887,7 @@ VS Code的用户界面由5个部分组成，每一个部分里面都包含了很
 - [75 文件使用技巧31: 配置新建文件的默认语言](#75-文件使用技巧31-配置新建文件的默认语言)
 - [76 文件使用技巧32: 打开历史项目快捷键](#76-文件使用技巧32-打开历史项目快捷键)
 - [77 文件使用技巧33: 将VS Code设置为Git GUI的默认编辑器](#77-文件使用技巧33-将vs-code设置为git-gui的默认编辑器)
+- [78 文件使用技巧34: 将VS Code设置为Git Commit的默认编辑器](#78-文件使用技巧34-将vs-code设置为git-commit的默认编辑器)
 
 #### 41 文件及文件夹的三个特点
 
@@ -1295,6 +1296,16 @@ https://github.com/tsq/vscode-course
 https://githubbox.com/tsq/vscode-course
 
 这比较适合于静态HTML或者是webapp。
+
+#### 78 文件使用技巧34: 将VS Code设置为Git Commit的默认编辑器
+
+如果我们是使用Git命令来做Commit操作，面对较长`commit message`的情形，我们可以直接使用`git commit`命令，这样Git会打开一个文本编辑器来让我们编写`commit message`，默认情况下Git会使用Vim这款编辑器。这一节课，我们来学习一下如何将VS Code配置为Git Commit的默认编辑器。
+
+配置方法很简单，首先需要确保**code**命令已经存在，之后只需要执行下面这条命令即可：
+
+```
+git config --global core.editor "code --wait"
+```
 
 ### 第四章 自定义VS Code
 ### 第五章 代码编辑技巧
