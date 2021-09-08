@@ -888,6 +888,7 @@ VS Code的用户界面由5个部分组成，每一个部分里面都包含了很
 - [76 文件使用技巧32: 打开历史项目快捷键](#76-文件使用技巧32-打开历史项目快捷键)
 - [77 文件使用技巧33: 将VS Code设置为Git GUI的默认编辑器](#77-文件使用技巧33-将vs-code设置为git-gui的默认编辑器)
 - [78 文件使用技巧34: 将VS Code设置为Git Commit的默认编辑器](#78-文件使用技巧34-将vs-code设置为git-commit的默认编辑器)
+- [79 文件使用技巧35: 使用Timeline查看任意两个commit的差异](#79-文件使用技巧35-使用timeline查看任意两个commit的差异)
 
 #### 41 文件及文件夹的三个特点
 
@@ -1306,6 +1307,17 @@ https://githubbox.com/tsq/vscode-course
 ```
 git config --global core.editor "code --wait"
 ```
+
+#### 79 文件使用技巧35: 使用Timeline查看任意两个commit的差异
+
+VS Code的**Timeline**会显示出某个文件的所有git提交记录，有时候我们想查看任意两个commit之间的差异，这一节课，我们就来学习如何实现这一操作。
+
+实现方式分两步：
+
+1. 右键要比较的第一个commit，选择`Select for Compare`。
+2. 右键要比较的另一个commit，选择`Compare with Selected`。
+
+这样，VS Code就会打开一个差异视图，高亮这两个commit之间的差异。
 
 ### 第四章 自定义VS Code
 ### 第五章 代码编辑技巧
