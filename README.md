@@ -1329,7 +1329,7 @@ VS Code的**Timeline**会显示出某个文件的所有git提交记录，有时�
 1. 右键要比较的第一个文件，选择`Select for Compare`。
 2. 右键要比较的另一个文件，选择`Compare with Selected`。
 
-**方法三是使用`code -d`命令。例如，如果要比较`a.txt`和`b.txt`两个文件，只需要在命令行中输入以下命令即可：
+**方法三**是使用`code -d`命令。例如，如果要比较`a.txt`和`b.txt`两个文件，只需要在命令行中输入以下命令即可：
 
 ```sh
 code -d a.txt b.txt
