@@ -891,6 +891,7 @@ VS Code的用户界面由5个部分组成，每一个部分里面都包含了很
 - [79 文件使用技巧35: 使用Timeline查看任意两个commit的差异](#79-文件使用技巧35-使用timeline查看任意两个commit的差异)
 - [80 文件使用技巧36: 使用code命令查看两个文件的差异](#80-文件使用技巧36-使用code命令查看两个文件的差异)
 - [81 文件使用技巧37: 利用临时文件查看差异](#81-文件使用技巧37-利用临时文件查看差异)
+- [82 文件使用技巧38: Run Active File](#82-文件使用技巧38-run-active-file)
 
 #### 41 文件及文件夹的三个特点
 
@@ -1345,6 +1346,42 @@ code -d a.txt b.txt
 1. 右键第一个临时文件，选择`Select for Compare`。
 2. 右键另一个临时文件，选择`Compare with Selected`。
 
+#### 82 文件使用技巧38: Run Active File
+
+ 对于一些脚本语言所编写的代码文件，比如`.js`、`.py`、`.ruby`等文件，在VS Code中，我们其实是可以通过运行一条叫做`Run Active File In Active Terminal`的命令，就可以直接执行这个文件并将结果显示到VS Code内建的Terminal当中。
+ 这一节课，我们就来学习一下它的的具体使用方法和注意事项。
+
+首先，调用方法是：在Command Palette中输入`Run Active`找到命令`Run Active File In Active Terminal`这条命令并执行。
+
+其次，关于**Shebang**的写法在macOS、Windows、Linux上会有不同，如果需要使用这种方式来运行某个文件，最好事先在网上搜下相关的shebang的写法。
+
+我这里给出几个macOS上shebang的写法：
+
+1. nodejs
+
+```js
+#!/usr/bin/env node
+
+console.log('hello world from node');
+```
+
+2. python
+
+```py
+#!/usr/bin/env python3
+
+print("hello world from python");
+```
+
+3. ruby
+
+```ruby
+#!/usr/bin/env ruby
+
+puts "hello world from ruby";
+```
+
+*注意：在macOS上，需要先使用`chmod +x 文件名`来将文件变成可执行文件。*
 
 ### 第四章 自定义VS Code
 ### 第五章 代码编辑技巧
