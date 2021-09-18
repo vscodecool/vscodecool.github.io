@@ -1357,7 +1357,7 @@ code -d a.txt b.txt
 
 我这里给出几个macOS上shebang的写法：
 
-1. nodejs
+1.nodejs
 
 ```js
 #!/usr/bin/env node
@@ -1365,7 +1365,7 @@ code -d a.txt b.txt
 console.log('hello world from node');
 ```
 
-2. python
+2.python
 
 ```py
 #!/usr/bin/env python3
@@ -1373,7 +1373,7 @@ console.log('hello world from node');
 print("hello world from python");
 ```
 
-3. ruby
+3.ruby
 
 ```ruby
 #!/usr/bin/env ruby
