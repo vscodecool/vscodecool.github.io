@@ -2,7 +2,7 @@
 
 这门课程是我从2020年2月份开始，在网上投稿的一门学习VS Code的视频教程，而之所以创建你现在正在看的这篇文档，是因为在下方的[课程详情](#课程详情)部分，你可以看到，我将每一节课的内容也以文字版的形式做了简单的介绍。这样做，一是，你可以通过搜索关键词来快速找到自己感兴趣的话题(搜索，你可以利用浏览器自带的搜索快捷键比如：mac是`command+f`；windows是`ctrl+f`)；二是，我将视频中涉及到的一些重要链接、命令、代码等信息在这里进行了记录，方便你在学习过程中查看和复制；三是，在已发布的视频当中，会有一些知识点的遗漏，对于遗漏的部分，我会在这里通过文字进行补充。
 
-在阅读这篇文档的过程中，如果发现一些错误，欢迎在Github上提出[pr](https://github.com/tsq/vscode-course/pulls)或者[issue](https://github.com/tsq/vscode-course/issues)。
+在阅读这篇文档的过程中，如果发现一些错误，欢迎在Github上提出[pr](https://github.com/vscodecool/vscodecool.github.io/pulls)或者[issue](https://github.com/vscodecool/vscodecool.github.io/issues)。
 
 另外，我将视频分别上传到了[Youtube](https://www.youtube.com/watch?v=HfHsX2yxfNg&list=PLNEp_Xli9W_lUQTtRYG7883bGah63UkNB)、[Bilibili](https://space.bilibili.com/30677217/channel/detail?cid=105022)、[Toutiao](http://www.ixigua.com/pseries/6856506428144747012)这三个平台，你可以点击它们并查看视频内容。
 
@@ -60,7 +60,7 @@
 
 1. 在视频下方留言，我看到了会尽快给予回复。
 2. 发邮件给我，我的联系邮箱是：`tangshiqiangcn@gmail.com`.
-3. 在Github上新建一个issue，地址是：[https://github.com/tsq/vscode-course](https://github.com/tsq/vscode-course)
+3. 在Github上新建一个issue，地址是：[https://github.com/vscodecool/vscodecool.github.io](https://github.com/vscodecool/vscodecool.github.io)
 
 #### 03 介绍 Visual Studio Code
 
@@ -1287,19 +1287,19 @@ Parameters: `$REPO`
 
 **2. `1s`: 手动更改URL，例如：**
 
-https://github.com/tsq/vscode-course 
+https://github.com/vscodecool/vscodecool.github.io 
 
 **改为**
 
-https://github1s.com/tsq/vscode-course
+https://github1s.com/vscodecool/vscodecool.github.io
 
 **3. `box`: 手动更改URL，例如：**
 
-https://github.com/tsq/vscode-course 
+https://github.com/vscodecool/vscodecool.github.io 
 
 **改为**
 
-https://githubbox.com/tsq/vscode-course
+https://githubbox.com/vscodecool/vscodecool.github.io
 
 这比较适合于静态HTML或者是webapp。
 
