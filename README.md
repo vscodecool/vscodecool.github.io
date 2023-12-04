@@ -900,6 +900,7 @@ VS Code的用户界面由5个部分组成，每一个部分里面都包含了很
 - [88 文件使用技巧44: 两种方式自动将文件加入gitignore](#88-文件使用技巧44-两种方式自动将文件加入gitignore)
 - [89 文件使用技巧45: 使用Fast scrolling加快滚动速度](#89-文件使用技巧45-使用fast-scrolling加快滚动速度)
 - [90 文件使用技巧46: 使用Local History查看文件的修改历史记录](#90-文件使用技巧46-使用local-history查看文件的修改历史记录)
+- [91 文件使用技巧47: 找回被不小心删除的文件](#91-文件使用技巧47-找回被不小心删除的文件)
 
 #### 41 文件及文件夹的三个特点
 
@@ -1473,6 +1474,15 @@ code --goto demo.c:4:24
 
 Timeline中除了有之前介绍过的`Git history`，也有不依赖Git的`Local History`，通过它可以查看每个文件的修改历史记录。
 这样，当我们不小心对文件的内容做了删除，通过这个功能就可以快速将文件内容恢复到之前的状态。
+
+#### 91 文件使用技巧47: 找回被不小心删除的文件
+
+如果一个重要的文件被我们不小心删了，在没有使用Git的情况下，我们可以通过“在同一个目录下新建一个同名的文件”的方式，在`Timeline`的`Local history`中找回这个文件。
+
+另外，也可以进入下面的`Local history`的保存目录，直接找到某个版本的源文件。
+
+- macOS: `cd ~/Library/Application\ Support/Code/User/History && open .`
+- windows: `cd %APPDATA%\Code\User\History && explorer .`
 
 
 ### 第四章 自定义VS Code
