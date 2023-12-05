@@ -901,6 +901,7 @@ VS Code的用户界面由5个部分组成，每一个部分里面都包含了很
 - [89 文件使用技巧45: 使用Fast scrolling加快滚动速度](#89-文件使用技巧45-使用fast-scrolling加快滚动速度)
 - [90 文件使用技巧46: 使用Local History查看文件的修改历史记录](#90-文件使用技巧46-使用local-history查看文件的修改历史记录)
 - [91 文件使用技巧47: 找回被不小心删除的文件](#91-文件使用技巧47-找回被不小心删除的文件)
+- [92 文件使用技巧48: 临时文件的保存位置](#92-文件使用技巧48-临时文件的保存位置)
 
 #### 41 文件及文件夹的三个特点
 
@@ -1483,6 +1484,15 @@ Timeline中除了有之前介绍过的`Git history`，也有不依赖Git的`Loca
 
 - macOS: `cd ~/Library/Application\ Support/Code/User/History && open .`
 - windows: `cd %APPDATA%\Code\User\History && explorer .`
+
+#### 92 文件使用技巧48: 临时文件的保存位置
+
+我们常常在项目当中通过新建一个临时文件来记录一些临时的代码或者笔记，这个临时文件即使我们没有手动的保存过，当我们再次打开这个项目，它也会显示出来，原因就是VS Code会自动将临时文件保存在磁盘当中，具体的位置是：
+
+- macOS: `cd ~/Library/Application\ Support/Code/Backups && open .`
+- windows: `cd %APPDATA%\Code\Backups && explorer .`
+
+这样当我们想要查看某个重要的临时文件，而又忘记了它存在于哪个项目当中，这个时候，我就可以直接进入临时文件的保存目录去寻找我们想要的文件。
 
 
 ### 第四章 自定义VS Code
