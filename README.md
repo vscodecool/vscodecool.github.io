@@ -1543,6 +1543,9 @@ Timeline中除了有之前介绍过的`Git history`，也有不依赖Git的`Loca
 **小节目录**
 
 - [99 更改显示语言](#99-更改显示语言)
+- [100 更改颜色主题](#100-更改颜色主题)
+- [101 更改文件图标主题](#101-更改文件图标主题)
+- [102 更改产品图标主题](#102-更改产品图标主题)
 
 #### 99 更改显示语言
 
@@ -1560,7 +1563,40 @@ VS Code默认使用英文作为显示语言。我们可以通过以下步骤来�
 2. 输入命令`Display`找到“Configure Display Language”并点击。
 3. 在下拉列表中选择一个语言并重启VS Code。
 
+#### 100 更改颜色主题
 
+VS Code的颜色主题（Color Theme），可以改变编辑器的背景色、代码语法高亮颜色、侧边栏颜色等等很多地方的颜色。一个好的颜色主题可以帮助我们去适应不同的环境光，
+同时也可以帮助我们快速识别代码结构。
+
+更改颜色主题的具体步骤：
+
+1. Setting > Themes >  ColorTheme
+2. 点击“Browse Additional Color Themes”
+3. 输入主题名称关键字如"github"
+4. 点击某个主题的名称
+
+
+#### 101 更改文件图标主题
+
+文件图标主题（File Icon Theme），可以为文件和文件夹赋予特殊的图标，以便帮助我们更好的去辨识文件类型或特殊的文件夹。
+
+更改文件图标主题的具体步骤：
+
+1. Setting > Themes >  File Icon Theme
+2. 点击“Install Additional File Icon Themes”
+3. 输入主题名称关键字如"material"
+4. 在扩展中，安装某个主题
+
+
+#### 102 更改产品图标主题
+
+产品图标主题（Product Icon Theme），可以改变VS Code本身的一些图标，如果你喜欢追求个性化，那边可以试着安装不同的产品图标主题。
+
+更改产品图标主题的具体步骤：
+
+1. Setting > Themes > Product Icon Theme
+2. 点击“Browse Additional Product Icon Themes”
+3. 点击某个主题的名称
 
 
 ### 第五章 代码编辑技巧
