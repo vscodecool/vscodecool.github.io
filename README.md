@@ -1546,6 +1546,8 @@ Timeline中除了有之前介绍过的`Git history`，也有不依赖Git的`Loca
 - [100 更改颜色主题](#100-更改颜色主题)
 - [101 更改文件图标主题](#101-更改文件图标主题)
 - [102 更改产品图标主题](#102-更改产品图标主题)
+- [103 使用第二侧边栏](#103-使用第二侧边栏)
+- [104 隐藏活动栏图标的提示数字](#104-隐藏活动栏图标的提示数字)
 
 #### 99 更改显示语言
 
@@ -1570,9 +1572,9 @@ VS Code的颜色主题（Color Theme），可以改变编辑器的背景色、�
 
 更改颜色主题的具体步骤：
 
-1. Setting > Themes >  ColorTheme
-2. 点击“Browse Additional Color Themes”
-3. 输入主题名称关键字如"github"
+1. `Setting` > `Themes` >  `ColorTheme`
+2. 点击`Browse Additional Color Themes`
+3. 输入主题名称关键字如**github**
 4. 点击某个主题的名称
 
 
@@ -1582,9 +1584,9 @@ VS Code的颜色主题（Color Theme），可以改变编辑器的背景色、�
 
 更改文件图标主题的具体步骤：
 
-1. Setting > Themes >  File Icon Theme
-2. 点击“Install Additional File Icon Themes”
-3. 输入主题名称关键字如"material"
+1. `Setting` > `Themes` >  `File Icon Theme`
+2. 点击`Install Additional File Icon Themes`
+3. 输入主题名称关键字如**material**
 4. 在扩展中，安装某个主题
 
 
@@ -1594,10 +1596,28 @@ VS Code的颜色主题（Color Theme），可以改变编辑器的背景色、�
 
 更改产品图标主题的具体步骤：
 
-1. Setting > Themes > Product Icon Theme
-2. 点击“Browse Additional Product Icon Themes”
+1. `Setting` > `Themes` > `Product Icon Theme`
+2. 点击`Browse Additional Product Icon Themes`
 3. 点击某个主题的名称
 
+#### 103 使用第二侧边栏
+
+在`Activity Bar`中，聚集了`Explorer`, `Search`, `Source Control`, `Debug`等等功能，你会发现，我们每次只能点击其中一个，让其内容在`SideBar`中显示，
+所以，在默认情况下，我们是没法同时查看多个Sidebar的内容，例如同时显示`Explorer`中的文件列表与`Source Control`中的文件修改。
+
+如果你有同时查看多个`Sidebar`的需求，我们可以利用VS Code的第二侧边栏(`Secondary Sidebar`)功能。具体的方法是，选择`Activity Bar`中的其中某个功能，如`Explorer`，点击它的图标不松并拖动到VS Code界面的右侧或者是
+放入底部Panel当中，就可以实现第二侧边栏功能了。
+
+除了将Sidebar内容整体移动至第二侧边栏，我们也可以将Sidebar当中的某个功能块单独提出来，放入第二侧边栏中。
+
+这里提供一个很有用的小技巧，我们可以将`Exploer`中的`Outline`单独放入右侧的第二侧边栏，这样我们可以很方便的通过`Outline`查看代码结构，同时，通过点击`Outline`中的某个
+函数名或者节点名，可以快速将代码移动到指定的区域。
+
+#### 104 隐藏活动栏图标的提示数字
+
+在`Activity Bar`中的很多图标上都会显示badge(提示数字)，如在`Explorer`中它的badge代表尚未保存的文件数量，`Source Control`的则表示Git变更的文件数量。
+
+如果你不喜欢看到这些`badge`，我们可以右键图标，选择`Hide Badge`。如果想再次显示，则右键图标，选择`Show Badge`。
 
 ### 第五章 代码编辑技巧
 ### 第六章 开发中的具体使用
