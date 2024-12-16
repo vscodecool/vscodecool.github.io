@@ -1562,6 +1562,7 @@ Timeline中除了有之前介绍过的`Git history`，也有不依赖Git的`Loca
 - [116 减少动画效果](#116-减少动画效果)
 - [117 忽略大文件目录](#117-忽略大文件目录)
 - [118 让光标变得更加丝滑](#118-让光标变得更加丝滑)
+- [119 自定义窗口标题](#119-自定义窗口标题)
 
 #### 99 更改显示语言
 
@@ -1766,6 +1767,59 @@ VS Code运行缓慢。这时候，我们可以通过以下配置，将特定的�
 1. 配置项`Cursor Smooth Caret Animation`，它的值改为`on`
 2. 配置项`Cursor Blinking`，它的值改为`smooth`
 
+### 119 自定义窗口标题
+
+VS Code界面顶部的搜索框，里面的文本默认显示的是当前项目文件夹的名称，我们其实是可以通过配置，让它能够显示更多的信息。
+
+在Settings搜索配置项`window.title`，它就是用于自定义顶部搜索框的显示内容。我们可以通过以下变量来组合显示不同的信息：
+
+1. `${activeEditorShort}` - 当前打开文件的名称
+2. `${activeEditorMedium}` - 当前文件相对于工作区的路径
+3. `${activeEditorLong}` - 当前文件的完整路径
+4. `${folderPath}` - 工作区文件夹的路径
+5. `${folderName}` - 工作区文件夹的名称
+6. `${rootName}` - 工作区的名称
+7. `${appName}` - 应用名称(Visual Studio Code)
+8. `${remoteName}` - 远程名称
+9. `${dirty}` - 如果当前编辑器有未保存的更改则显示 "*"
+10. `${separator}` - 根据操作系统显示合适的路径分隔符
+
+使用示例：
+
+```json
+{
+  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}"
+}
+```
+
+上面的配置会显示如：
+- `*index.js - MyProject - Visual Studio Code` (文件有未保存更改时)
+- `index.js - MyProject - Visual Studio Code` (文件已保存时)
+
+一些常用的配置方式：
+
+1. 只显示文件名和项目名：
+```json
+{
+  "window.title": "${activeEditorShort}${separator}${rootName}"
+}
+```
+
+2. 显示文件的相对路径：
+```json
+{
+  "window.title": "${activeEditorMedium}${separator}${rootName}"
+}
+```
+
+3. 显示完整路径：
+```json
+{
+  "window.title": "${activeEditorLong}"
+}
+```
+
+通过合理配置 `window.title`，可以更方便地识别当前正在编辑的文件位置和项目信息，特别是在同时打开多个 VSCode 窗口时非常有用。
 
 
 ### 第五章 代码编辑技巧
