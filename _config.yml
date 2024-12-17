@@ -2,3 +2,5 @@ theme: jekyll-theme-cayman
 title: VS Code入门教程
 description: 一套面向VS Code初学者的视频教程
 author: 程序员阿汤
+webmaster:
+  apple-touch-icon: /apple-touch-icon.png
