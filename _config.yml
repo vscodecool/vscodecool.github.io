@@ -4,3 +4,7 @@ description: 一套面向VS Code初学者的视频教程
 author: 程序员阿汤
 webmaster:
   apple-touch-icon: /apple-touch-icon.png
+  apple-mobile-web-app-title: VSCode教程
+  apple-mobile-web-app-capable: yes
+  apple-mobile-web-app-status-bar-style: black  
+google_analytics: G-6MNJE781B9   
