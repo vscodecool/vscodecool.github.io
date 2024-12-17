@@ -1647,6 +1647,9 @@ Sidebar的工具栏中有很多功能图标，如果有些有些功能我们不�
 
 如果你希望和macOS或者Linux采用的是正斜杠，我们可以采取以下自定义配置：
 
+```
+"explorer.copyRelativePathSeparator": "/"
+```
 
 ### 107 快速撤销对文件的误操作
 
