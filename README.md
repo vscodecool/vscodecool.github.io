@@ -1573,6 +1573,7 @@ Timeline中除了有之前介绍过的`Git history`，也有不依赖Git的`Loca
 - [127 调整panel的占用空间](#127-调整panel的占用空间)
 - [128 开启文本自动换行](#128-开启文本自动换行)
 - [129 开启自动保存](#129-开启自动保存)
+- [130 使用新字体](#130-使用新字体)
 
 #### 99 更改显示语言
 
@@ -1907,6 +1908,38 @@ VSCode默认是需要手动触发保存的。配置项“Auto Save”，有下�
 - “afterDelay”: 每次输入一个字符都会触发自动保存
 - “onFocusChange”: 鼠标离开当前编辑区域，就会触发自动保存
 - “onWindowChange”: 鼠标离开当前VS Code窗口，就会触发自动保存
+
+#### 130 使用新字体
+
+我将以在Windows上安装“JetBrains Mono”字体来做演示。
+
+1. 获取字体文件
+   - 访问 JetBrains Mono 的官方网站：https://www.jetbrains.com/lp/mono/
+   - 点击页面上的 "Download" 按钮下载字体文件
+   - 下载的是一个 zip 压缩包，文件名类似 "JetBrainsMono-x.x.zip"
+
+2. 安装字体
+   方法一（推荐）：
+   - 解压下载的 zip 文件
+   - 在解压后的文件夹中，找到 "fonts" 文件夹
+   - 全选所有的 .ttf 文件
+   - 右键选择 "为所有用户安装" 或 "安装"
+
+   方法二：
+   - 打开 Windows 控制面板
+   - 找到并进入 "外观和个性化" → "字体"
+   - 将解压后的 .ttf 文件直接拖拽到字体窗口中
+
+3. 在 VS Code 中配置
+   - 打开 VS Code
+   - 按下 `Ctrl + ,` 打开设置
+   - 在搜索框中输入 "font family"
+   - 找到 "Editor: Font Family" 设置项
+   - 输入以下配置：
+     ```
+     'JetBrains Mono', 'Microsoft YaHei'
+     ```
+   - 注意字体名称要用单引号括起来，多个字体用逗号分隔
 
 ### 第五章 代码编辑技巧
 ### 第六章 开发中的具体使用
