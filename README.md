@@ -1935,9 +1935,9 @@ VSCode默认是需要手动触发保存的。配置项“Auto Save”，有下�
    - 按下 `Ctrl + ,` 打开设置
    - 在搜索框中输入 "font family"
    - 找到 "Editor: Font Family" 设置项
-   - 输入以下配置：
+   - 在最前面追加以下配置：
      ```
-     'JetBrains Mono', 'Microsoft YaHei'
+     'JetBrains Mono'
      ```
    - 注意字体名称要用单引号括起来，多个字体用逗号分隔
 
