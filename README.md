@@ -1575,6 +1575,10 @@ Timeline中除了有之前介绍过的`Git history`，也有不依赖Git的`Loca
 - [129 开启自动保存](#129-开启自动保存)
 - [130 使用新字体](#130-使用新字体)
 - [131 隐藏滚动条](#131-隐藏滚动条)
+- [132 快速打开快捷键文档](#132-快速打开快捷键文档)
+- [133 Editor Group](#133-editor-group)
+- [134 Editor Group空间分配技巧](#134-editor-group空间分配技巧)
+- [135 Navigation Scope](#135-navigation-scope)
 
 #### 99 更改显示语言
 
@@ -1951,6 +1955,35 @@ VSCode默认是需要手动触发保存的。配置项“Auto Save”，有下�
 - 找到配置项“Editor › Scrollbar: Vertical Scrollbar Size”，改为“0”
 
 这样以后就用minimap来代替滚动条了。
+
+#### 132 快速打开快捷键文档
+
+如果想要查看VSCode的快捷键PDF文档，可以点击菜单项Help->Keyboard Shortcuts Reference.
+
+#### 133 Editor Group
+
+我们在编写代码的时候，常常需要参考其他一个或多个源代码文件，这时候，就可以使用Editor Group了。
+
+使用Editor Group可以打开多个编辑区域，可以是垂直方向排列，也可以水平方向排列。
+
+除了手动去创建Editor Group，也可以点击菜单项View->Editor Layout->，里面就可以选择VS Code内置的一个布局，比如两列、两行、2x2等等。
+
+#### 134 Editor Group空间分配技巧
+
+- 技巧1: 双击分割线，可以让左右两个Editor Group的空间平均分配。
+- 技巧2: 拖动分割线至最右侧，光标所在的Editor Group会自动获取最大空间。
+- 技巧3: 使用命令“Toggle Maximize Editor Group”，可以让光标所在的Editor Group占居全部空间，其它Editor Group会被隐藏。
+
+
+#### 135 Navigation Scope
+
+设置项”Workbench>Editor: Navigation Scope“，用来控制"前进"和"后退"命令的作用范围。有三个选项：
+
+- default: 在所有打开的编辑器和编辑器组之间导航
+- editorGroup: 仅在当前编辑器组内导航
+- editor: 仅在当前编辑器内导航
+
+使用这个设置可以帮助我们控制在使用快捷键导航历史位置时的跳转范围。
 
 ### 第五章 代码编辑技巧
 ### 第六章 开发中的具体使用
