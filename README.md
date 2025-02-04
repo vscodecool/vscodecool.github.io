@@ -1579,6 +1579,7 @@ Timeline中除了有之前介绍过的`Git history`，也有不依赖Git的`Loca
 - [133 Editor Group](#133-editor-group)
 - [134 Editor Group空间分配技巧](#134-editor-group空间分配技巧)
 - [135 Navigation Scope](#135-navigation-scope)
+- [136 启用连字](#136-启用连字)
 
 #### 99 更改显示语言
 
@@ -1984,6 +1985,33 @@ VSCode默认是需要手动触发保存的。配置项“Auto Save”，有下�
 - editor: 仅在当前编辑器内导航
 
 使用这个设置可以帮助我们控制在使用快捷键导航历史位置时的跳转范围。
+
+#### 136 启用连字
+
+VSCode 中的 `editor.fontLigatures` 是一个用于控制编辑器中连字(ligatures)显示的配置选项。
+
+连字是一种特殊的排版特性，它会将某些字符组合显示为单个字形。比如:
+- `=>` 可能会显示为一个单一的箭头符号
+- `==` 可能会显示为一个更长的等号
+- `!=` 可能会合并为一个特殊符号
+
+要启用这个特性:
+
+1. 首先需要安装支持连字的编程字体，比如:
+   - Fira Code
+   - Cascadia Code
+   - JetBrains Mono
+   - Operator Mono
+
+2. 然后在 settings.json 中配置:
+```json
+{
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true
+}
+```
+
+连字主要是为了提高代码的可读性,特别是对于一些常用的操作符组合。但这是个人偏好的问题,有些开发者可能觉得连字反而影响了代码的清晰度。
 
 ### 第五章 代码编辑技巧
 ### 第六章 开发中的具体使用
